@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { FeedComponent } from './pages/feed/feed.component';
 import { LoginComponent } from './pages/login/login.component';
+import { CarouselComponent } from './componentes/carousel/carousel.component';
+import { CardComponent } from './componentes/card/card.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,12 @@ import { LoginComponent } from './pages/login/login.component';
     CadastroComponent,
     HomeComponent,
     PerfilComponent,
-    FeedComponent
+    FeedComponent,
+    CarouselComponent,
+    CardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

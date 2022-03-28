@@ -1,1 +1,8 @@
-<p>home works!</p>
+<main class="home-page">
+  <app-carousel></app-carousel>
+  <button class="btn bg-success">Entrar</button>
+  <button class="btn bg-info">Cadastrar</button>
+  <section class="cards-ctn">
+    <app-card *ngFor="let card of cards" [content]="card"></app-card>
+  </section>
+</main>
