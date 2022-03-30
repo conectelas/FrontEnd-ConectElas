@@ -1,107 +1,115 @@
-@import url(https://i.ibb.co/vqr9sBX/5432299.jpg);
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=Comfortaa:wght@300;700&family=Gothic+A1:wght@700&family=Josefin+Sans:wght@100;200;300&family=Maven+Pro&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@100&family=Press+Start+2P&family=Raleway:wght@300&family=Red+Hat+Mono&family=Smooch+Sans:wght@200&family=Yanone+Kaffeesatz:wght@300;400&display=swap");
 
-.bg {
-  background-image: url();
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  background-position: center;
-  display: flex;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  right: 0;
-  overflow: auto;
-  padding: 3em;
-  position: absolute;
-
+.card-ctn {
+  border-top-left-radius: 40px !important;
+  border-bottom-left-radius: 60px !important;
 }
 
-#img-bg {
-  min-height: 800px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-
-}
-
-.box {
+/* glasmorfism*/
+.textin {
   box-sizing: border-box;
-  box-shadow: 50px 5px 5px 5px #765ac4;
-  border-radius: 20px;
+  box-shadow: 58px 20px 100px #bc8fcabb;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 60px;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(50px);
 }
 
-input {
-  font-size: 12px;
+/* login caixa/div */
+.login {
+  background-color: #fffeff;
 }
 
-.pokebola {
-  width: 110px;
+/* background  */
+.img-bg {
+  height: 100% !important;
+  width: 100% !important;
+  background-image: url(https://i.ibb.co/gwydKhD/6033687.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* caixa input */
+.login input {
+  margin-top: 2px;
+  border-radius: 60px;
+  background-color: rgba(224, 79, 230, 0.219);
+  font-family: "Montserrat Alternates", sans-serif, monospace!important;
+  color: #ffffff !important;
+}
+
+.login input:focus {
+  outline-color: aqua;
+}
+
+.f-st {
+  margin-top: 2px;
+  font-family: "Montserrat Alternates", sans-serif, monospace;
+  font-size: 18px;
+  color: #6148bf;
+  font-weight: bold;
+}
+
+.c-inp {
+  color: #660590;
+}
+.color-text {
+  font-family: "Montserrat Alternates", sans-serif, monospace!important;
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.img-log {
+  margin-top: 0px;
+  width: 350px;
   height: auto;
   margin-left: -50px;
 }
 
-.login {
-  font-family: "VT323", monospace;
-  font-size: 16px;
-  color: rgb(143, 67, 194);
-}
-.login-font {
-  font-family: "VT323", monospace;
-  font-size: 28pt;
-  display: flex;
-  align-items: right;
-}
-
-.box {
-  box-shadow: 20px 20px 58px rgba(188, 88, 228, 0.25);
-  border-top: 10px solid rgba(108, 215, 223, 0.747);
-  border-right: 1px solid rgba(228, 46, 197, 0.178);
-  backdrop-filter: blur(1px);
-  text-decoration: none;
-  -webkit-backdrop-filter: blur(10px);
-}
-
 .btn {
-  font-family: "VT323", monospace;
-  font-size: 15pt;
-  font-weight: bold;
-  margin-right: 40px;
+  font-family   : 'VT323', monospace;
+  font-size     : 15pt;
+  font-weight   : bold;
+  margin-right  : 50px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: 0.5s;
-  line-height: 30px;
-  margin-left: 20px;
-  background-color: rgba(153, 69, 173, 0.658);
+  transition    : 0.5s;
+  line-height   : 30px;
+  margin-left: 30px;
+  background-color: rgb(107, 6, 128);
+  color: #e95db3;
+  border-radius: 30px!important;
+
+}
+.btn-1:hover {
+  background      : #06000e url();
+  color           : rgb(238, 238, 238);
+  transition-delay: 0.5s;
+  background-size : auto;
+  animation       : animate 0.8s steps(8) forwards;
+
 }
 
-.btn:hover {
-  background: #f334ba
-    url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX11692316.jpg);
-  color: #ffff;
+.btn-2:hover{
+  background      : rgb(160, 0, 93) url();
+  color           : #ffffff;
   transition-delay: 0.5s;
-  background-size: auto;
-  animation: animate 0.8s steps(8) forwards;
+  background-size : auto;
+  animation       : animate 0.8s steps(8) forwards;
 }
 
 @keyframes animate {
   0% {
-    background-position-y: 0px;
+      background-position-y: 0px;
   }
 
   100% {
-    background-position-y: -480px;
+      background-position-y: -480px;
   }
-}
 
-.color-font{
-  color: #25c0f0 !important;
-}
-
-.log{
-  margin-left: 20px !important;
 }

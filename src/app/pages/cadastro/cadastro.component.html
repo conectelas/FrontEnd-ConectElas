@@ -1,70 +1,51 @@
-<div class="bg">
+<!-- <main class="cadastro-page"> -->
+<div class="img-bg">
+  <div class="container align-self-center ">
+    <div class="card-ctn row md-5  ">
 
-  <div class="container">
-    <div class="conteiner-fluid">
-
-      <div class="d-flex align-items-start flex-column">
-
-        <div class="d-flex align-items-start flex-column mt-5 " style="height: 500px;">
-          <img width="450px" src="https://i.ibb.co/09GLty3/5150721.jpg" alt="">
+      <div class="card-ctn login col-md-6 f-st ">
+        <div class="form-group f-s mt-3">
+          <label for="Nome" >Insira seu nome completo</label>
+          <input type="text" class="form-control color-text" type="text" name="nome" id="nome" placeholder="Digite seu nome">
         </div>
 
-        <div class="mb-auto p-2" >
-        <p class="text-justify text-monospace p-2 "> <br> Você não tem uma conta?</p>
-        <div class="d-flex justify-content-bottom mt-6">
-          <button type="submit" class="btn login p-2">Cadastrar</button>
-        </div>
-      </div>
-      </div>
-
-        <div class="row d-flex align-items-end">
-
-        <div class="col-md-6 mt-5 mb-5">
-          <div class="row d-flex justify-content-center">
-
-            <div class="col-md-10 box">
-
-
-              <h1 class="text-center mt-1 font-login">Cadastrar</h1>
-
-
-              <div class="form-group  font">
-                <label for="Nome">Nome</label>
-                <input type="text" class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome">
-              </div>
-
-              <div class="form-group  font">
-                <label for="Usuário">Usuário</label>
-                <input class="form-control" type="text" name="usuario" id="usuario"
-                  placeholder="Digite seu email de usuário">
-              </div>
-
-              <div class="form-group  font">
-                <label for="Foto">Link da foto</label>
-                <input class="form-control" type="text" name="foto" id="foto" placeholder="Digite o link da sua foto">
-              </div>
-
-              <div class="form-group  font">
-                <label for="Senha">Senha</label>
-                <input class="form-control" type="password" name="senha" id="senha" placeholder="Digite sua senha">
-              </div>
-
-              <div class="form-group  font">
-                <label for="confirmeSenha">Confirmar senha</label>
-                <input class="form-control" type="password" name="senha" id="senha" placeholder="Confirme sua senha">
-              </div>
-
-              <div class="d-flex justify-content-center mb-3 font">
-                <button type="submit" class="btn btn-outline-dark btn-2 m-20" routerLink='/login'>Cancelar</button>
-                <button type="submit" class="btn btn-outline-dark btn-1 m-20">Cadastrar</button>
-              </div>
-            </div>
-          </div>
+        <div class="form-group login f-st">
+          <label for="Usuário">Insira o seu melhor e-mail</label>
+          <input class="form-control color-text" type="text" name="usuario" id="usuario" placeholder="Digite seu email de usuário">
         </div>
 
+        <div class="form-group login f-st">
+          <label for="Foto">Link da foto</label>
+          <input class="form-control color-text" type="text" name="foto" id="foto" placeholder="Digite o link da sua foto">
+        </div>
+
+        <div class="form-group login f-st">
+          <label for="Senha">A sua senha precisa ter 8 caracteres!</label>
+          <input class="form-control color-text" type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        </div>
+
+        <div class="form-group login f-st">
+          <label for="confirmeSenha">Confirme a sua senha, por favor!</label>
+          <input class="form-control color-text" type="password" name="senha" id="senha" placeholder="Confirme sua senha">
+        </div>
+
+        <div class="d-flex justify-content-center mb-3">
+          <button type="submit" class="btn btn-outline-dark btn-2 m-20" routerLink='/login'>Cancelar</button>
+          <button type="submit" class="btn btn-outline-dark btn-1 m-20">Cadastrar</button>
+        </div>
 
       </div>
+
+
+      <div class="col-md-6 text-center textin">
+        <img class="img-log" src="https://i.ibb.co/r3rFhDq/Login-rafiki.png" alt="">
+        <h1 class="c-inp ">Olá, </h1>
+        <h3 class="text-2">Seja muito bem vinda!</h3>
+
+      </div>
+
     </div>
-
   </div>
 </div>
+
+<!-- </main> -->
