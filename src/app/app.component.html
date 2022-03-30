@@ -1,1 +1,17 @@
+<app-menu *ngIf="resolution >= 992"></app-menu>
+<header *ngIf="resolution < 992">
+  <nav>
+    <div class="barrinha-container">
+      <div class="barrinha"></div>
+      <div class="barrinha"></div>
+      <div class="barrinha"></div>
+    </div>
+
+    <h3 class="h3-nav">ConectElas+</h3>
+
+    <div class="img-nav">
+      <img src="../../../assets/img/nav-img.png" alt="logo conectelas+" />
+    </div>
+  </nav>
+</header>
 <app-home></app-home>
