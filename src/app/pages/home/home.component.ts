@@ -29,8 +29,13 @@ export class HomeComponent implements OnInit {
       'muito lorem muito lorem muito lorem muito lorem muito lorem muito lorem'
     ),
   ];
+  status: string = '';
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit() {}
+
+  toggle(): void {
+    this.status = this.status === 'open' ? '' : 'open';
+  }
 }

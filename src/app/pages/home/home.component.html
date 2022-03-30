@@ -1,3 +1,18 @@
+<header>
+  <nav>
+    <div class="barrinha-container {{ status }}" (click)="toggle()">
+      <div class="barrinha"></div>
+      <div class="barrinha"></div>
+      <div class="barrinha"></div>
+    </div>
+
+    <h3 class="h3-nav">ConectElas+</h3>
+
+    <div class="img-nav">
+      <img src="../../../assets/img/nav-img.png" alt="logo conectelas+" />
+    </div>
+  </nav>
+</header>
 <main class="home-page">
   <app-carousel></app-carousel>
   <button class="btn bg-success">Entrar</button>
@@ -6,3 +21,27 @@
     <app-card *ngFor="let card of cards" [content]="card"></app-card>
   </section>
 </main>
+<footer>
+  <div class="img-footer">
+    <img src="../../../assets/img/nav-img.png" alt="logo conectelas+" />
+    <h6>ConectElas+</h6>
+  </div>
+
+  <hr />
+
+  <div class="icons-redes d-flex justify-content-center">
+    <img src="../../../assets/img/iconmonstr-github-1.svg" alt="Icone Github" />
+    <img
+      src="../../../assets/img/iconmonstr-instagram-11.svg"
+      alt="Ione Instagram"
+    />
+    <img
+      src="../../../assets/img/iconmonstr-linkedin-3.svg"
+      alt="Icone Linkedin"
+    />
+  </div>
+
+  <div class="copy text-center">
+    <p>&copy; Todos os direitos reservados ConectElas.</p>
+  </div>
+</footer>
