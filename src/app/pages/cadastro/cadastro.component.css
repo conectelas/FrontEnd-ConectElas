@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+#pok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg{
+    background-image: url(https://i.ibb.co/wS83CDm/SL-030221-41190-19.jpg);
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    overflow: auto;
+    padding: 0em;
+    position: absolute;
+
+}
+
+
+.m-20{
+    margin-left: 20px;
+    background-color:#970b8cd7;
+    color: rgb(248, 198, 241);
+}
+
+.btn:hover{
+    background-color: #28226fbb;
+    color: black;
+}
+.box{
+
+    box-sizing: border-box;
+    box-shadow: 20px 20px 58px #1d0124bb;
+    border-radius: 20px;
+    border-top: 5px solid rgba(216, 125, 224, 0.993);
+    border-bottom: 1px solid rgba(216, 125, 224, 0.993);
+    border-right: 1px solid rgba(216, 125, 224, 0.993);
+    border-left: 1px solid rgba(216, 125, 224, 0.993);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(25px);
+
+}
+
+#img-bg {
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+input{
+    font-size: 12px;
+}
+
+select{
+    font-size: 12px;
+}
+.font{
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    color: #25c0f0;
+
+}
+
+.font-login{
+   color: #aa64c5;
+    font-family: 'VT323', monospace;
+    font-size: 42pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn {
+    font-family   : 'VT323', monospace;
+    font-size     : 15pt;
+    font-weight   : bold;
+    margin-right  : 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition    : 0.5s;
+    line-height   : 30px;
+    margin-left: 20px;
+    background-color: rgba(216, 79, 243, 0.76);
+
+}
+
+.btn-1:hover {
+    background      : #4ce5f5 url(https://cdn.wallpapersafari.com/45/32/BFmZqw.jpg);
+    color           : #ffff;
+    transition-delay: 0.5s;
+    background-size : auto;
+    animation       : animate 0.8s steps(8) forwards;
+}
+
+.btn-2:hover{
+    background      : #f34534 url(https://media.istockphoto.com/vectors/pixel-border-edge-pattern-transition-element-vector-id1193532945?k=20&m=1193532945&s=170667a&w=0&h=DW5oDSo_4oDyD_AqeIpEV7lxwpvVEbC3ZfZ576Vwz_A=);
+    color           : #ffff;
+    transition-delay: 0.5s;
+    background-size : auto;
+    animation       : animate 0.8s steps(8) forwards;
+}
+
+@keyframes animate {
+    0% {
+        background-position-y: 0px;
+    }
+
+    100% {
+        background-position-y: -480px;
+    }
+
+}
+
+.p{
+  font-size: 50pt!important;
+}
