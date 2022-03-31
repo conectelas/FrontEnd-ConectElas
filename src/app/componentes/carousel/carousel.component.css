@@ -1,0 +1,24 @@
+.home-page--carousel {
+  max-width: 500px;
+}
+
+.shade {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-title {
+  color: white;
+}
+
+.slide-text {
+  color: white;
+  margin-top: auto;
+}
