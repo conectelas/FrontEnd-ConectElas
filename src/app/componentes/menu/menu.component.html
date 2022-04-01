@@ -16,7 +16,7 @@
         <ul class="navbar-nav mr-auto d-flex align-items-center">
           <li class="nav-item">
             <img
-              src="https://avatars.githubusercontent.com/u/99820984?v=4"
+              src="{{foto}}"
               alt=""
               width="60px"
               height="60px"
@@ -24,12 +24,14 @@
             />
             <br />
           </li>
+        <li>
+        <p class="nav-link active m-0 font-weight-bold text-dark fs-16" href="#"
+          >{{nome}}</p>
+        </li>
         
-        <a class="nav-link active m-0 font-weight-bold text-dark fs-16" href="#"
-          >ConectElas</a>
-        <a class="nav-link active" aria-current="page" href="#">Início</a>
+        <a class="nav-link active" aria-current="page" routerLink="/home">ConectElas</a>
         <a class="nav-link active" aria-current="page" href="#">Meu Perfil</a>
-        <a class="nav-link active" aria-current="page" href="#">Feed</a>
+        <a class="nav-link active" aria-current="page" routerLink="/feed">Feed</a>
         <a class="nav-link active" aria-current="page" href="#">Quem somos</a>
         
       </ul>
@@ -38,28 +40,14 @@
   </div>
   <div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <div class="onoff">
-      <input type="checkbox" class="toggle" id="onoff1" />
+    <div class="onoff d-flex align-items-center">
+      <input type="checkbox" class="toggle" id="onoff1"/>
       <label for="onoff1"></label>
     </div>
   </div>
-  <ul class="navbar-nav ml-auto d-flex align-items-center">
-    <li>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-purple">Login</button>
-      </div>
-    </li>
-    <li>
-      <div>
-        <button type="button" class="botao">Cadastrar</button>
-      </div>
-    </li>
-    <li class="nav-item pl-3 d-flex justify-content-end">
-      <a href="">
-        <p class="m-0 font-weight-bold text-dark fs-16">
+    <div >
+        <p class="m-0 ml-5 font-weight-bold text-dark fs-16">
           Sair <i class="fa fa-sign-out" aria-hidden="true"></i>
         </p> 
-      </a>
-    </li>
-  </ul>
+    </div>
 </nav>
