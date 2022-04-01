@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=Comfortaa:wght@300;700&family=Gothic+A1:wght@700&family=Josefin+Sans:wght@100;200;300&family=Maven+Pro&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@100&family=Press+Start+2P&family=Raleway:wght@300&family=Red+Hat+Mono&family=Smooch+Sans:wght@200&family=Yanone+Kaffeesatz:wght@300;400&display=swap");
 
 .card-ctn {
-  border-top-left-radius: 40px !important;
-  border-bottom-left-radius: 60px !important;
+
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 60px;
 }
 
 /* glasmorfism*/
 .textin {
+  border-top-left-radius: 40px !important;
+  border-bottom-left-radius: 60px !important;
   box-sizing: border-box;
   box-shadow: 58px 20px 100px #bc8fcabb;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 60px;
 
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(50px);
