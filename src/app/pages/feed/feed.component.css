@@ -3,11 +3,15 @@
     background: linear-gradient(150deg, rgba(138,52,126,1) 0%, rgba(66,26,126,1) 37%, rgba(105,6,162,1) 70%);
  }
  .img-ce{
-     width: 100%;
+     width: 110%;
      padding: 0;
      border-radius: 15px;
      padding:0;
-     box-shadow: 10px 13px 7px rgb(61, 4, 49);
+     transition: all 2s;
+ }
+.img-ce:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 13px 7px rgb(61, 4, 49);
 }
 .coluna1{
     margin: 0;

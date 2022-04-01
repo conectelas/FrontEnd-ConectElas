@@ -1,30 +1,59 @@
-<div id="back1">
+<div class="container-fluid" id="back1">
+
     <div class="row pt-5 pr-0 m-0 d-flex align-items-center">
-        <div class="col-md-6 coluna1">
-        <div>
-            <h2 class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi iste vero provident, obcaecati nam
-                ipsum
-                doloremque aperiam reiciendis suscipit magni, laborum at quisquam odit magnam, tempore eum optio unde
-                vitae.
-            </h2>
+        <div class="col-md-6">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 text-white coluna1 mb-3">
+                    <h1 class="fs-54 mt-5 mb-4">Seja bem vindo(a)!</h1>
+                    <h5 class="fs-18">expresse aqui os seus pensamentos e opiniões!</h5>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mt-3 mb-5">
+                <div class="col-md-6">
+                    <button class="btn btn-light mr-2" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
+                    <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
+                </div>
+            </div>
+
         </div>
-        </div>
-        <div class="col-md-6 coluna2">
+
+
+        <div class="col-md-6 d-flex justify-content-center coluna2 ">
             <img class="img-ce" src="https://user-images.githubusercontent.com/99820984/155228861-42d83f3c-77a9-43f0-9883-7245dc7707b0.png" alt="">
         </div>
+
     </div>
 
     <div>
+        <nav>
         <ul class="nav justify-content-center marginNav">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Minhas Postagens</a>
+                <a class="nav-link active" id="nav-MinhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab"
+                aria-controls="nav-todasPostagens" aria-selected="true">Minhas Postagens</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Marketplace</a>
+                <a class="nav-link" id="nav-marketPlace-tab" data-toggle="tab" href="#marketplace" role="tab" aria-controls="nav-marketplace"
+                aria-selected="false">Marketplace</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Empregabilidade</a>
+                <a class="nav-link" id="nav-empregabilidade-tab" data-toggle="tab"  href="#empregabilidade" role="tab" aria-controls="nav-empregabilidade"
+                aria-selected="false">Empregabilidade</a>
             </li>
         </ul>
+    </nav>
+    <div class="container mb-5 mt-5 text-white" id="postagens">
+        <div class="tab-content " id="nav-tabContent">
+            <div class="tab-pane fade show active" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+                Minhas Postagens</div>
+            <div class="tab-pane fade" id="marketplace" role="tabpanel" aria-labelledby="nav-marketplace">
+                Marketplace
+            </div>
+            <div class="tab-pane fade" id="empregabilidade" role="tabpanel" aria-labelledby="nav-empregabilidade">
+                Empregabilidade
+            </div>
+        </div>
     </div>
-</div>
+
+
