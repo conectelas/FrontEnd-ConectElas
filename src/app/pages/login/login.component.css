@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=Comfortaa:wght@300;700&family=Gothic+A1:wght@700&family=Josefin+Sans:wght@100;200;300&family=Maven+Pro&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@100&family=Press+Start+2P&family=Raleway:wght@300&family=Red+Hat+Mono&family=Smooch+Sans:wght@200&family=Yanone+Kaffeesatz:wght@300;400&display=swap");
+
+.card-ctn {
+  border-top-left-radius: 40px !important;
+  border-bottom-left-radius: 60px !important;
+}
+
+/* glasmorfism*/
+.textin {
+  box-sizing: border-box;
+  box-shadow: 58px 20px 100px #bc8fcabb;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 60px;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+/* login caixa/div */
+.login {
+  background-color: #fffeff;
+}
+
+/* background  */
+.img-bg {
+  height: 100% !important;
+  width: 100% !important;
+  background-image: url(https://i.ibb.co/gwydKhD/6033687.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* caixa input */
+.login input {
+  margin-top: 2px;
+  border-radius: 60px;
+  background-color: rgba(224, 79, 230, 0.219);
+  font-family: "Montserrat Alternates", sans-serif, monospace!important;
+  color: #ffffff !important;
+}
+
+.login input:focus {
+  outline-color: aqua;
+}
+
+.f-st {
+  margin-top: 2px;
+  font-family: "Montserrat Alternates", sans-serif, monospace;
+  font-size: 18px;
+  color: #6148bf;
+  font-weight: bold;
+}
+
+.c-inp {
+  color: #660590;
+}
+.color-text {
+  font-family: "Montserrat Alternates", sans-serif, monospace!important;
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.img-log {
+  margin-top: 0px;
+  width: 350px;
+  height: auto;
+  margin-left: -50px;
+}
+
+.btn {
+  font-family   : 'VT323', monospace;
+  font-size     : 15pt;
+  font-weight   : bold;
+  margin-right  : 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition    : 0.5s;
+  line-height   : 30px;
+  margin-left: 30px;
+  background-color: rgb(107, 6, 128);
+  color: #e95db3;
+  border-radius: 30px!important;
+
+}
+.btn-1:hover {
+  background      : #06000e url();
+  color           : rgb(238, 238, 238);
+  transition-delay: 0.5s;
+  background-size : auto;
+  animation       : animate 0.8s steps(8) forwards;
+
+}
+
+.btn-2:hover{
+  background      : rgb(160, 0, 93) url();
+  color           : #ffffff;
+  transition-delay: 0.5s;
+  background-size : auto;
+  animation       : animate 0.8s steps(8) forwards;
+}
+
+@keyframes animate {
+  0% {
+      background-position-y: 0px;
+  }
+
+  100% {
+      background-position-y: -480px;
+  }
+
+}
