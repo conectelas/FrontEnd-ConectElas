@@ -7,10 +7,11 @@ import { AuthService } from './service/auth.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  menuLogado: string[] = ['Inicio', 'Perfil', 'Feed', 'Quem somos', 'Sair'];
 
-  constructor(public auth: AuthService){
-    
-  }
+  menuNaoLogado: string[] = ['Inicio', 'Quem somos', 'Login', 'Cadastrar'];
+
+  constructor(public auth: AuthService) {}
 
   resolution: number = window.innerWidth;
 
