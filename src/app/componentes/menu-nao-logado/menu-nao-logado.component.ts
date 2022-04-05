@@ -9,7 +9,7 @@ export class MenuNaoLogadoComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
 }
