@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 
@@ -7,8 +7,9 @@ import { environment } from 'src/environments/environment.prod';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent implements OnInit {
 
+export class MenuComponent implements OnInit {
+  @Input() conteudo: string[]
   nome = environment.nome
   foto = environment.foto
   

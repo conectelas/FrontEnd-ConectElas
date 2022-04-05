@@ -6,7 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { FeedComponent } from './pages/feed/feed.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'cadastro', component: CadastroComponent },

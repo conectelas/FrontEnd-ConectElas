@@ -1,4 +1,5 @@
 <app-menu *ngIf='auth.logado()'></app-menu> <!--resolution >= 992 -->
+<app-menu *ngIf='!auth.logado()'></app-menu>
 <header *ngIf="resolution < 992">
   <nav>
     <div class="barrinha-container">
