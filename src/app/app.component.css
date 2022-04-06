@@ -1,4 +1,4 @@
-/* victor */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=BIZ+UDGothic:wght@700&family=Comfortaa:wght@300;700&family=Gothic+A1:wght@700&family=Josefin+Sans:wght@100;200;300&family=Maven+Pro&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@100&family=Press+Start+2P&family=Raleway:wght@300&family=Red+Hat+Mono&family=Smooch+Sans:wght@200&family=Yanone+Kaffeesatz:wght@300;400&display=swap');
 
 nav {
   display: flex;
@@ -30,7 +30,7 @@ nav {
       transition: .5s ease-in-out;
       cursor: pointer;
   }
-  
+
   .barrinha-container span{
       display: block;
       height: 3px;
