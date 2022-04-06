@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,6 +13,8 @@ import { FeedComponent } from './pages/feed/feed.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CarouselComponent } from './componentes/carousel/carousel.component';
 import { CardComponent } from './componentes/card/card.component';
+import { MenuNaoLogadoComponent } from './componentes/menu-nao-logado/menu-nao-logado.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,8 +28,9 @@ import { CardComponent } from './componentes/card/card.component';
     FeedComponent,
     CarouselComponent,
     CardComponent,
+    MenuNaoLogadoComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

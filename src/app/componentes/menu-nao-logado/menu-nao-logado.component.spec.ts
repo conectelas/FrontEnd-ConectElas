@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RodapeComponent } from './rodape.component';
+import { MenuNaoLogadoComponent } from './menu-nao-logado.component';
 
-describe('RodapeComponent', () => {
-  let component: RodapeComponent;
-  let fixture: ComponentFixture<RodapeComponent>;
+describe('MenuNaoLogadoComponent', () => {
+  let component: MenuNaoLogadoComponent;
+  let fixture: ComponentFixture<MenuNaoLogadoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RodapeComponent ]
+      declarations: [ MenuNaoLogadoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RodapeComponent);
+    fixture = TestBed.createComponent(MenuNaoLogadoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
