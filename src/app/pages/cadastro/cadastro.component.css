@@ -33,11 +33,13 @@
   justify-content: center;
 }
 
+
+
 /* caixa input */
 .login input {
   margin-top: 2px;
   border-radius: 60px;
-  background-color: rgba(224, 79, 230, 0.219);
+  background-color: rgba(147, 45, 237, 0.523);
   font-family: "Montserrat Alternates", sans-serif, monospace!important;
   color: #ffffff !important;
 }
