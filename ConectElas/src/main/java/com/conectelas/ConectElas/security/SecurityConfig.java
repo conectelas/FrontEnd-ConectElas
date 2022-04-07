@@ -19,6 +19,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
   @Override
   protected void configure(AuthenticationManagerBuilder auth) throws Exception{
     auth.userDetailsService(userDetailsService);
+
+    auth.inMemoryAuthentication()
+      .withUser("root")
+      .password(passwordEncoder().encode("root"))
+      .authorities("ROLE_USER");
   }
 
   @Override
@@ -27,6 +32,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
       .cors().and().csrf().disable()
       .authorizeRequests()
       .antMatchers("/usuarios/**").permitAll()
+//      .antMatchers("/swagger-ui.html").permitAll()
       .anyRequest().authenticated()
       .and()
       .httpBasic();

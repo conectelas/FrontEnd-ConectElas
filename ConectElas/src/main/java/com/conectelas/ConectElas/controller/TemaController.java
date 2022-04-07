@@ -27,6 +27,18 @@ public class TemaController {
     return repo.findAll();
   }
 
+  @GetMapping("/{id}")
+  public ResponseEntity<TemaModel> getById(@PathVariable Long id) {
+    return repo.findById(id)
+      .map(resposta -> ResponseEntity.ok(resposta))
+      .orElse(ResponseEntity.notFound().build());
+  }
+
+  @GetMapping("/nome/{nome}")
+  public ResponseEntity<List<TemaModel>> getByDescricao(@PathVariable String nome) {
+    return ResponseEntity.ok(repo.findAllByNomeContainingIgnoreCase(nome));
+  }
+
   @PostMapping
   public ResponseEntity<TemaModel> inserirTema(@RequestBody TemaModel tema) {
     try {

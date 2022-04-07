@@ -18,4 +18,10 @@ public class UsuarioLogin {
     this.foto = usuario.getFoto();
     this.token = token;
   }
+
+  public UsuarioLogin(UsuarioModel usuario) {
+    this.id = usuario.getId();
+    this.nome = usuario.getNome();
+    this.foto = usuario.getFoto();
+  }
 }

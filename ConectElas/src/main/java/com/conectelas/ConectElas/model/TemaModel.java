@@ -8,7 +8,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.util.List;
 
-@Entity
+@Entity(name="tema")
 @Getter
 @Setter
 public class TemaModel {
@@ -20,10 +20,10 @@ public class TemaModel {
   @NotBlank(message="Tema precisa de nome!")
   private String nome;
 
-  @NotBlank(message="Tema precisa de descrição!")
-  private String descricao;
+//  @NotBlank(message="Tema precisa de descrição!")
+//  private String descricao;
 
-  @OneToMany(cascade = CascadeType.REMOVE)
-  @JsonIgnoreProperties()
-  private List<PostagemModel> postagens;
+  @OneToMany(mappedBy = "tema", cascade = CascadeType.REMOVE)
+  @JsonIgnoreProperties("tema")
+  private List<PostagemModel> postagem;
 }

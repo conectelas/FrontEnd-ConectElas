@@ -26,9 +26,9 @@ public class TemaService {
 
   public ResponseEntity<TemaModel> atualizarTema(TemaModel tema) {
     var dbTema = repo.findById(tema.getId());
-    dbTema.get().setDescricao(tema.getDescricao());
+//    dbTema.get().setDescricao(tema.getDescricao());
     dbTema.get().setNome(tema.getNome());
-    dbTema.get().setPostagens(tema.getPostagens());
+    dbTema.get().setPostagem(tema.getPostagem());
     repo.save(dbTema.get());
 
     return ResponseEntity.ok().body(dbTema.get());

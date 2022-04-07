@@ -56,4 +56,19 @@ public class UsuarioService {
     usuario.setSenha(passwordEncoder.encode(usuario.getSenha()));
     return ResponseEntity.ok().body(repo.save(usuario));
   }
+
+    public ResponseEntity<UsuarioLogin> atualizar(UsuarioModel usuario) {
+      var dbUsuario = repo.findById(usuario.getId());
+
+      if (dbUsuario.isPresent()) {
+        dbUsuario.get().setEmail(usuario.getEmail());
+        dbUsuario.get().setSenha(passwordEncoder.encode(usuario.getSenha()));
+        dbUsuario.get().setNome(usuario.getNome());
+        dbUsuario.get().setFoto(usuario.getFoto());
+        repo.save(dbUsuario.get());
+        return ResponseEntity.ok().body(new UsuarioLogin(usuario));
+      }
+
+      throw new UsernameNotFoundException("usuario nao encontrado");
+    }
 }
