@@ -1,4 +1,6 @@
-<app-menu *ngIf="resolution >= 992"></app-menu>
+<app-menu [conteudo]="menuLogado" *ngIf="auth.logado()"></app-menu>
+<!--resolution >= 992 -->
+<app-menu-nao-logado *ngIf="!auth.logado()"></app-menu-nao-logado>
 <header *ngIf="resolution < 992">
   <nav>
     <div class="barrinha-container">
@@ -16,3 +18,5 @@
 </header>
 <!-- <app-login><app-cadastro> -->
 <router-outlet></router-outlet>
+
+<app-rodape *ngIf="auth.logado()"></app-rodape>

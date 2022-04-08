@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,6 +13,15 @@ import { FeedComponent } from './pages/feed/feed.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CarouselComponent } from './componentes/carousel/carousel.component';
 import { CardComponent } from './componentes/card/card.component';
+import { MenuNaoLogadoComponent } from './componentes/menu-nao-logado/menu-nao-logado.component';
+import { FormsModule } from '@angular/forms';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { OrderModule } from 'ngx-order-pipe';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { TemaComponent } from './pages/tema/tema.component';
+import { TemaEditComponent } from './pages/edit/tema-edit/tema-edit.component';
+import { PostEditComponent } from './pages/edit/post-edit/post-edit.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +35,27 @@ import { CardComponent } from './componentes/card/card.component';
     FeedComponent,
     CarouselComponent,
     CardComponent,
+    MenuNaoLogadoComponent,
+    TemaComponent,
+    TemaEditComponent,
+    PostEditComponent,
+    TemaDeleteComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ModalModule.forRoot(),
+    OrderModule
+
+
+  ],
+  providers: [{
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy,
+  }],
   bootstrap: [AppComponent],
 })
+
 export class AppModule {}

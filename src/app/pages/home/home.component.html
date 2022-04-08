@@ -1,7 +1,7 @@
 <main class="home-page">
   <app-carousel></app-carousel>
-  <button class="btn bg-success">Entrar</button>
-  <button class="btn bg-info">Cadastrar</button>
+  <button class="btn bg-success" routerLink="/login">Entrar</button>
+  <button class="btn bg-info" routerLink="/cadastro">Cadastrar</button>
   <section class="cards-ctn">
 
     <app-card *ngFor="let card of cards" [content]="card"></app-card>
