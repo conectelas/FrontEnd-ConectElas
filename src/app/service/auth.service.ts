@@ -14,7 +14,7 @@ export class AuthService {
     private http: HttpClient) { }
 
   entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
-    return this.http.post<UsuarioLogin>('https://conectelas.herokuapp.com/logar', usuarioLogin)
+    return this.http.post<UsuarioLogin>('https://conectelas.herokuapp.com/login', usuarioLogin)
   }
 
   cadastrar(usuarioModel: UsuarioModel){

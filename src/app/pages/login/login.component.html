@@ -5,47 +5,26 @@
   <div class="container align-self-center">
     <div class="card-ctn row md-5">
       <div class="col-md-6 text-center textin">
-        <img
-          class="img-log"
-          src="https://i.ibb.co/r3rFhDq/Login-rafiki.png"
-          alt=""
-        />
+        <img class="img-log" src="https://i.ibb.co/r3rFhDq/Login-rafiki.png" alt="" />
         <h1 class="c-inp">Olá,</h1>
         <h3 class="text-2">Seja muito bem vinda!</h3>
       </div>
       <div class="card-ctn login col-md-6 f-st">
         <div class="form-group f-s mt-3">
           <label for="Usuario">Insira seu Usuário</label>
-          <input
-            [(ngModel)]="usuarioLogin.usuario"
-            type="text"
-            class="form-control color-text"
-            type="text"
-            name="usuario"
-            id="usuario"
-            placeholder="Digite seu e-mail cadastrado."
-          />
+          <input [(ngModel)]="usuarioLogin.usuario" type="text" class="form-control color-text" type="text"
+            name="usuario" id="usuario" placeholder="Digite seu e-mail cadastrado." />
 
         </div>
 
         <div class="form-group login f-st">
           <label for="Senha">Insira a sua senha</label>
-          <input
-            [(ngModel)]="usuarioLogin.senha"
-            class="form-control color-text"
-            type="password"
-            name="senha"
-            id="senha"
-            placeholder="Digite sua senha cadastrada"
-          />
+          <input [(ngModel)]="usuarioLogin.senha" class="form-control color-text" type="password" name="senha"
+            id="senha" placeholder="Digite sua senha cadastrada" />
         </div>
 
         <div class="d-flex justify-content-center mb-3">
-          <button
-            type="submit"
-            class="btn btn-outline-dark btn-2 m-20"
-            (click)="entrar()"
-          >
+          <button type="submit" class="btn btn-outline-dark btn-2 m-20" (click)="entrar()">
             Entrar
           </button>
         </div>

@@ -30,7 +30,7 @@
         </div>
         <div class="form-group">
           <label for="tipo">Tipo de Usuário</label>
-          <select name="tipo" id="tipo" (change)="tipoUsuario1($event)">
+          <select class="form-control" id="tipo" (change)="tipoUser($event)">
             <option value="">Selecione um tipo de usuário</option>
             <option value="Normal">Normal</option>
             <option value="ADM">Administrador</option>
@@ -39,7 +39,7 @@
 
 
         <div class="d-flex justify-content-center mb-3">
-          <button type="submit" class="btn btn-outline-dark btn-2 m-20" routerLink='/login'>Cancelar</button>
+          <button type="submit" class="btn btn-outline-dark btn-2 m-20" routerLink='/home'>Cancelar</button>
           <button type="submit" class="btn btn-outline-dark btn-1 m-20" (click)='cadastrar()'>Cadastrar</button>
         </div>
 
