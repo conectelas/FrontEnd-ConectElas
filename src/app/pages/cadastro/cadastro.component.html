@@ -12,9 +12,9 @@
         </div>
 
         <div class="form-group login f-st">
-          <label for="Usuário">Insira o seu melhor e-mail</label>
+          <label for="email">Insira o seu melhor e-mail</label>
 
-          <input [(ngModel)]='usuarioModel.usuario' class="form-control color-text" type="text" name="usuario" id="usuario" placeholder="Digite seu email de usuário">
+          <input [(ngModel)]='usuarioModel.email' class="form-control color-text" type="text" name="email" id="email" placeholder="Digite seu email de usuário">
 
         </div>
 
@@ -46,7 +46,7 @@
 
 
         <div class="d-flex justify-content-center mb-3">
-          <button type="submit" class="btn btn-outline-dark btn-2 m-20" routerLink='/home'>Cancelar</button>
+          <button type="submit" class="btn btn-outline-dark btn-2 m-20" routerLink='/home-desktop'>Cancelar</button>
           <button type="submit" class="btn btn-outline-dark btn-1 m-20" (click)='cadastrar()'>Cadastrar</button>
 
         </div>

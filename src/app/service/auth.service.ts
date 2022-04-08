@@ -14,11 +14,11 @@ export class AuthService {
     private http: HttpClient) { }
 
   entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
-    return this.http.post<UsuarioLogin>('https://conectelas.herokuapp.com/login', usuarioLogin)
+    return this.http.post<UsuarioLogin>('https://conectelas.herokuapp.com/usuarios/login', usuarioLogin)
   }
 
   cadastrar(usuarioModel: UsuarioModel){
-    return this.http.post<UsuarioModel>('https://conectelas.herokuapp.com/cadastrar', usuarioModel)
+    return this.http.post<UsuarioModel>('https://conectelas.herokuapp.com/usuarios/cadastrar', usuarioModel)
   }
 
   atualizar(usuario: UsuarioModel): Observable<UsuarioModel> {
@@ -30,7 +30,7 @@ export class AuthService {
   }
 
   putUsuario(usuario: UsuarioModel): Observable<UsuarioModel> {
-    return this.http.put<UsuarioModel>('https://conectelas.herokuapp.com/usuarios/atualizar', usuario)
+    return this.http.put<UsuarioModel>('https://conectelas.herokuapp.com/usuarios', usuario)
   }
 
   logado() {

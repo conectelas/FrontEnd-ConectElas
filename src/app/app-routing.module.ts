@@ -8,16 +8,19 @@ import { FeedComponent } from './pages/feed/feed.component';
 import { PostEditComponent } from './pages/edit/post-edit/post-edit.component';
 import { TemaEditComponent } from './pages/edit/tema-edit/tema-edit.component';
 import { TemaComponent } from './pages/tema/tema.component';
+import { HomeDesktopComponent } from './pages/home-desktop/home-desktop.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home-desktop', pathMatch: 'full' },
 
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'cadastro', component: CadastroComponent },
+  {path: 'home-desktop', component: HomeDesktopComponent },
 
   { path: 'feed', component: FeedComponent},
   { path: 'tema', component: TemaComponent},
+
 
   { path: 'tema-edit/:id', component: TemaEditComponent},
   { path: 'postagem-edit/:id', component: PostEditComponent}

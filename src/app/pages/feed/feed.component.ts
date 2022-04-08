@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-=======
+
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
->>>>>>> dev
 
 @Component({
   selector: 'app-feed',
@@ -12,11 +10,6 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class FeedComponent implements OnInit {
 
-<<<<<<< HEAD
-  constructor() { }
-
-  ngOnInit(): void {
-=======
   constructor(
     private router: Router
   ) { }
@@ -26,8 +19,5 @@ export class FeedComponent implements OnInit {
       alert('Sua sessão expirou!')
       this.router.navigate(['/login'])
     }
-
->>>>>>> dev
   }
-
 }
