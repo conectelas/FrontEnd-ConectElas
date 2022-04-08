@@ -1,7 +1,10 @@
 <!-- menu não logado/inicial-->
 <app-menu-home *ngIf="auth.logado() == false"></app-menu-home>
 
-
+<!-- menu feed/usuario logado-->
+<!--
+<app-menu-feed *ngIf="auth.logado() == true"></app-menu-feed>
+-->
 
 
 <router-outlet></router-outlet>

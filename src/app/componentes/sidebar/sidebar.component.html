@@ -1,0 +1,38 @@
+<aside class="sidebarzinha">
+  <div class="container">
+  <img class="fotoUsuario" src="https://www.organizesuavida.com.br/wp-content/uploads/2017/09/gatinho-shrek.jpg" width="100" height="100" alt=""> <!-- img perfil usuario -->
+  <p class="nomeUsuario">NomeUsuario</p>
+
+    <p class="qntd">10</p>
+    <p class="post-qntd">Postagens</p>
+</div>
+
+  <nav>
+    <ul #links class="links">
+      <li class="link-ctn">
+        <div *ngIf="linkClicado === 'Nova Postagem' " class="ativo"></div>
+        <img width="25" height="25"src="assets/icons/homeIcon.svg" alt="">
+        <a href="" class="link">Nova Postagem</a>
+      </li>
+      <li class="link-ctn">
+        <div *ngIf="linkClicado === 'Minhas postagens' " class="ativo"></div>
+        <img width="25" height="25"src="assets/icons/homeIcon.svg" alt="">
+        <a href="" class="link">Minhas postagens</a></li>
+      <li class="link-ctn">
+        <div *ngIf="linkClicado === 'Meu Perfil' " class="ativo"></div>
+        <img width="25" height="25"src="assets/icons/homeIcon.svg" alt="">
+        <a href="" class="link">Meu Perfil</a>
+      </li>
+      <li class="link-ctn">
+        <div *ngIf="linkClicado === 'Editar Perfil' " class="ativo"></div>
+        <img width="25" height="25"src="assets/icons/homeIcon.svg" alt="">
+        <a href="" class="link">Editar Perfil</a>
+      </li>
+      <li class="link-ctn" id="sair" >
+        <img width="25" height="25"src="assets/icons/homeIcon.svg" alt="">
+        <a href="" class="link">Sair</a>
+      </li>
+    </ul>
+
+  </nav>
+</aside>

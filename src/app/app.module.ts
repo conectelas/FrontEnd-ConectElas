@@ -27,6 +27,8 @@ import { PostEditComponent } from './pages/edit/post-edit/post-edit.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 import { HomeDesktopComponent } from './pages/home-desktop/home-desktop.component';
 import { MenuFeedComponent } from './componentes/menu-feed/menu-feed.component';
+import { SidebarComponent } from './componentes/sidebar/sidebar.component';
+import { PostComponent } from './componentes/post/post.component';
 
 
 @NgModule({
@@ -49,6 +51,8 @@ import { MenuFeedComponent } from './componentes/menu-feed/menu-feed.component';
     TemaDeleteComponent,
     HomeDesktopComponent,
     MenuFeedComponent,
+    SidebarComponent,
+    PostComponent,
   ],
   imports: [
     BrowserModule,

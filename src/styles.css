@@ -4,10 +4,8 @@
 
 
 /* COR FONTE ROXO ESCURO*/
-.font-color{
 
-}
-
+/*
 body{
   display:flex;
   align-items:center;
@@ -19,7 +17,7 @@ body{
   background-size: 200% 300%;
   animation: color 5s ease-in infinite;
 
-}
+}*/
 
 @keyframes color{
   0%{
