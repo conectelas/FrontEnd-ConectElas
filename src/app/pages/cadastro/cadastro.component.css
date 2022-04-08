@@ -1,31 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=Comfortaa:wght@300;700&family=Gothic+A1:wght@700&family=Josefin+Sans:wght@100;200;300&family=Maven+Pro&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@100&family=Press+Start+2P&family=Raleway:wght@300&family=Red+Hat+Mono&family=Smooch+Sans:wght@200&family=Yanone+Kaffeesatz:wght@300;400&display=swap");
+@import url('https://fonts.google.com/specimen/Poppins?query=poppins');
 
-.card-ctn {
+*{
+  
+  font-family: 'Poppins', sans-serif;
+}
+/*.card-ctn {
   border-top-left-radius: 40px !important;
   border-bottom-left-radius: 60px !important;
-}
+}*/
 
 /* glasmorfism*/
 .textin {
   box-sizing: border-box;
-  box-shadow: 58px 20px 100px #bc8fcabb;
+  box-shadow: 58px 20px 100px  #c510ed;
+  color: #c510ed;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 60px;
 
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
+
 
 /* login caixa/div */
 .login {
-  background-color: #fffeff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: solid #c510ed;
+  padding: 0px 0px;
+  
 }
 
 /* background  */
 .img-bg {
   height: 100% !important;
   width: 100% !important;
-  background-image: url(https://i.ibb.co/GPfN1b0/2729833.jpg);
+  background-image: url(http://i.ibb.co/gwydKhD/6033687.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -35,44 +45,49 @@
 
 /* caixa input */
 .login input {
+  
   margin-top: 2px;
   border-radius: 60px;
-  background-color: rgba(224, 79, 230, 0.219);
-  font-family: "Montserrat Alternates", sans-serif, monospace!important;
+  background-color: 2px  #c510ed;
+  background-color: transparent;
+  font-family: 'Poppins', "sans-serif", monospace!important;
   color: #ffffff !important;
+  border: 1px solid #c510ed;
 }
 
-.login input:focus {
-  outline-color: aqua;
-}
 
 .f-st {
   margin-top: 2px;
-  font-family: "Montserrat Alternates", sans-serif, monospace;
+  font-family: 'Poppins', "sans-serif", monospace;
   font-size: 18px;
-  color: #6148bf;
-  font-weight: bold;
+  
+  color:#c510ed;
+  font-weight: bold; /*negrito*/
 }
 
-.c-inp {
-  color: #660590;
+
+
+.c-inp { /*olá*/
+  font-family: 'Poppins', "sans-serif", monospace!important;
+  color: white;
 }
+/* não muda nada
 .color-text {
-  font-family: "Montserrat Alternates", sans-serif, monospace!important;
-  color: #ffffff !important;
+  font-family: 'Poppins', "sans-serif", monospace!important;
+  color: white !important;
   font-size: 14px;
-  font-weight: bold;
-}
+  
+}*/
 
-.img-log {
+.img-log { /* imagem ao lado*/
   margin-top: 0px;
   width: 350px;
   height: auto;
   margin-left: -50px;
 }
 
-.btn {
-  font-family   : 'VT323', monospace;
+.btn { /*botão*/
+  font-family   : 'Poppins', "sans-serif", monospace;
   font-size     : 15pt;
   font-weight   : bold;
   margin-right  : 50px;
@@ -102,6 +117,7 @@
   background-size : auto;
   animation       : animate 0.8s steps(8) forwards;
 }
+
 
 @keyframes animate {
   0% {
