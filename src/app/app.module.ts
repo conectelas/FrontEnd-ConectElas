@@ -10,7 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { FeedComponent } from './pages/feed/feed.component';
 import { LoginComponent } from './pages/login/login.component';
-import { SobreComponent } from './componentes/sobre/sobre.component';
+import { SobreComponent } from './pages/sobre/sobre.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,7 @@ import { SobreComponent } from './componentes/sobre/sobre.component';
     HomeComponent,
     PerfilComponent,
     FeedComponent,
-    SobreComponent,
-
+    SobreComponent
   ],
   imports: [
     BrowserModule,
