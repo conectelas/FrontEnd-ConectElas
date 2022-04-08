@@ -11,6 +11,9 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { FeedComponent } from './pages/feed/feed.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
+import { HomeDesktopComponent } from './pages/home-desktop/home-desktop.component';
+import { MenuHomeComponent } from './componentes/menu-home/menu-home.component';
+import { MenuFeedComponent } from './componentes/menu-feed/menu-feed.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { SobreComponent } from './pages/sobre/sobre.component';
     PerfilComponent,
     FeedComponent,
     SobreComponent,
+    HomeDesktopComponent,
+    MenuHomeComponent,
+    MenuFeedComponent,
 
   ],
   imports: [
