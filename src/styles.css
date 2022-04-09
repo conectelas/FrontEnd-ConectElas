@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=BIZ+UDGothic:wght@700&family=Comfortaa:wght@300;700&family=Gothic+A1:wght@700&family=Josefin+Sans:wght@100;200;300&family=Maven+Pro&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@100&family=Press+Start+2P&family=Raleway:wght@300&family=Red+Hat+Mono&family=Smooch+Sans:wght@200&family=Yanone+Kaffeesatz:wght@300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=BIZ+UDGothic:wght@700&family=Comfortaa:wght@300;700&family=Gothic+A1:wght@700&family=Josefin+Sans:wght@100;200;300&family=Maven+Pro&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@100&family=Press+Start+2P&family=Raleway:wght@300&family=Red+Hat+Mono&family=Smooch+Sans:wght@200&family=Yanone+Kaffeesatz:wght@300;400&display=swap");
 
 /* COR FONTE ROXO ESCURO*/
 
@@ -19,16 +18,19 @@ body{
 
 }*/
 
-@keyframes color{
-  0%{
-background-position: 0% 50%;
+body {
+  overflow-x: hidden;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0% 50%;
   }
 
   50% {
-background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-background-position: 50% 100%;
+    background-position: 50% 100%;
   }
 }
-

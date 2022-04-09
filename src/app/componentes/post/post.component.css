@@ -1,3 +1,46 @@
-article{
-  padding: 10vh 215px 0 215px;
+section {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.info-user {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #c89ce4;
+  padding: 1rem 2rem;
+}
+
+.info-user--img {
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.info-user--nome {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.post-info {
+  padding: 1rem 2rem;
+}
+
+.titulo-post {
+  font-size: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0);
+  text-align: center;
+}
+
+.texto-post {
+}
+
+.foto-post {
+  width: 100%;
+  object-fit: contain;
 }

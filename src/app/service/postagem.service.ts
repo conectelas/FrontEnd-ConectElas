@@ -5,41 +5,56 @@ import { environment } from 'src/environments/environment.prod';
 import { PostagemModel } from '../model/PostagemModel';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PostagemService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  token = {
-    headers: new HttpHeaders().set('Authorization', environment.token)
-  } /* httpheaders : Para inserir o token no Authorization e no Header da minha requisição.*/
-
-
+  headers = { headers: { Authorization: environment.token } };
 
   getAllPostagens(): Observable<PostagemModel[]> {
-    return this.http.get<PostagemModel[]>('https://conectelas.herokuapp.com/postagens', this.token)
+    console.log(environment.token);
+    return this.http.get<PostagemModel[]>(
+      'https://conectelas.herokuapp.com/postagens',
+      { headers: { Authorization: environment.token } }
+    );
   }
   /*Observable nos metódos que irão chamar os end-points Para garantir que o tipo da variável será passado corretamente.*/
 
   getByIdPostagem(id: number): Observable<PostagemModel> {
-    return this.http.get<PostagemModel>(`https://conectelas.herokuapp.com/postagens/${id}`, this.token)
+    return this.http.get<PostagemModel>(
+      `https://conectelas.herokuapp.com/postagens/${id}`,
+      this.headers
+    );
   }
 
-  getByTituloPostagem(titulo: string): Observable<PostagemModel[]>{
-    return this.http.get<PostagemModel[]>(`https://conectelas.herokuapp.com/postagens/titulo/${titulo}`, this.token)
-
+  getByTituloPostagem(titulo: string): Observable<PostagemModel[]> {
+    return this.http.get<PostagemModel[]>(
+      `https://conectelas.herokuapp.com/postagens/titulo/${titulo}`,
+      this.headers
+    );
   }
 
   postPostagem(postagem: PostagemModel): Observable<PostagemModel> {
-    return this.http.post<PostagemModel>('https://conectelas.herokuapp.com/postagens', postagem, this.token)
+    return this.http.post<PostagemModel>(
+      'https://conectelas.herokuapp.com/postagens',
+      postagem,
+      { headers: { Authorization: environment.token } }
+    );
   }
 
   putPostagem(postagem: PostagemModel): Observable<PostagemModel> {
-    return this.http.put<PostagemModel>('https://conectelas.herokuapp.com/postagens', postagem, this.token)
+    return this.http.put<PostagemModel>(
+      'https://conectelas.herokuapp.com/postagens',
+      postagem,
+      this.headers
+    );
   }
 
   deletePostagem(id: number) {
-    return this.http.delete(`https://conectelas.herokuapp.com/postagens/${id}`, this.token)
+    return this.http.delete(
+      `https://conectelas.herokuapp.com/postagens/${id}`,
+      this.headers
+    );
   }
 }

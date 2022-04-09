@@ -1,4 +1,3 @@
-
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -29,7 +28,8 @@ import { HomeDesktopComponent } from './pages/home-desktop/home-desktop.componen
 import { MenuFeedComponent } from './componentes/menu-feed/menu-feed.component';
 import { SidebarComponent } from './componentes/sidebar/sidebar.component';
 import { PostComponent } from './componentes/post/post.component';
-
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -53,6 +53,7 @@ import { PostComponent } from './componentes/post/post.component';
     MenuFeedComponent,
     SidebarComponent,
     PostComponent,
+    CapitalizePipe,
   ],
   imports: [
     BrowserModule,
@@ -60,15 +61,15 @@ import { PostComponent } from './componentes/post/post.component';
     HttpClientModule,
     FormsModule,
     ModalModule.forRoot(),
-    OrderModule
-
+    OrderModule,
+    SweetAlert2Module.forRoot(),
   ],
-  providers: [{
-    provide: LocationStrategy,
-    useClass: HashLocationStrategy,
-  }],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy,
+    },
+  ],
   bootstrap: [AppComponent],
 })
-
 export class AppModule {}
-

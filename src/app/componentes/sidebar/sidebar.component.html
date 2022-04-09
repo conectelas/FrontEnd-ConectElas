@@ -1,38 +1,107 @@
 <aside class="sidebarzinha">
   <div class="container">
-  <img class="fotoUsuario" src="https://www.organizesuavida.com.br/wp-content/uploads/2017/09/gatinho-shrek.jpg" width="100" height="100" alt=""> <!-- img perfil usuario -->
-  <p class="nomeUsuario">NomeUsuario</p>
+    <img
+      *ngIf="foto !== ''"
+      class="fotoUsuario"
+      src="{{ foto }}"
+      width="100"
+      height="100"
+      alt=""
+    />
+    <img
+      width="100"
+      height="100"
+      *ngIf="foto === ''"
+      src="assets/img/avatar-padrao.svg"
+      alt=""
+    />
+    <!-- img perfil usuario -->
+    <p class="nomeUsuario">{{ nome }}</p>
 
-    <p class="qntd">10</p>
-    <p class="post-qntd">Postagens</p>
-</div>
+    <div>
+      <span class="qntd"
+        >{{ totalPosts }} <span class="post-qntd">postagens</span></span
+      >
+    </div>
+  </div>
 
   <nav>
     <ul #links class="links">
       <li class="link-ctn">
-        <div *ngIf="linkClicado === 'Nova Postagem' " class="ativo"></div>
-        <img width="25" height="25"src="assets/icons/homeIcon.svg" alt="">
-        <a href="" class="link">Nova Postagem</a>
+        <div *ngIf="linkClicado === 'Nova Postagem'" class="ativo"></div>
+        <button [swal]="novaPostagem" class="link">
+          <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
+          Nova Postagem
+        </button>
       </li>
       <li class="link-ctn">
-        <div *ngIf="linkClicado === 'Minhas postagens' " class="ativo"></div>
-        <img width="25" height="25"src="assets/icons/homeIcon.svg" alt="">
-        <a href="" class="link">Minhas postagens</a></li>
-      <li class="link-ctn">
-        <div *ngIf="linkClicado === 'Meu Perfil' " class="ativo"></div>
-        <img width="25" height="25"src="assets/icons/homeIcon.svg" alt="">
-        <a href="" class="link">Meu Perfil</a>
+        <div *ngIf="linkClicado === 'Minhas postagens'" class="ativo"></div>
+        <a href="" class="link">
+          <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
+          Minhas postagens</a
+        >
       </li>
       <li class="link-ctn">
-        <div *ngIf="linkClicado === 'Editar Perfil' " class="ativo"></div>
-        <img width="25" height="25"src="assets/icons/homeIcon.svg" alt="">
-        <a href="" class="link">Editar Perfil</a>
+        <div *ngIf="linkClicado === 'Meu Perfil'" class="ativo"></div>
+        <a href="" class="link">
+          <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
+          Meu Perfil</a
+        >
       </li>
-      <li class="link-ctn" id="sair" >
-        <img width="25" height="25"src="assets/icons/homeIcon.svg" alt="">
-        <a href="" class="link">Sair</a>
+      <li class="link-ctn">
+        <div *ngIf="linkClicado === 'Editar Perfil'" class="ativo"></div>
+        <a href="" class="link">
+          <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
+          Editar Perfil</a
+        >
+      </li>
+      <li class="link-ctn" id="sair">
+        <a href="" class="link">
+          <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
+          Sair</a
+        >
       </li>
     </ul>
-
   </nav>
 </aside>
+
+<swal #novaPostagem title="Nova Postagem" [swalOptions]="swalOptions">
+  <form *swalPortal="undefined">
+    <label for="titulo">Título </label>
+    <input
+      [(ngModel)]="postagem.titulo"
+      name="titulo"
+      id="titulo"
+      class="swal2-input"
+      type="text"
+      placeholder="Digite o título da postagem"
+    />
+    <select
+      [(ngModel)]="postagem.tema.id"
+      name="tema"
+      class="swal2-input"
+      id="tema"
+    >
+      <option value="" selected>Escolha o tema</option>
+      <option value="2">Geral</option>
+      <option value="2">Marketplace</option>
+      <option value="2">Empregabilidade</option>
+    </select>
+    <input
+      type="text"
+      class="swal2-input"
+      name="foto"
+      id="foto"
+      [(ngModel)]="postagem.foto"
+      placeholder="(Opcional) Coloque o link de uma foto"
+    />
+    <label for="texto">O que você quer compartilhar?</label>
+    <textarea
+      [(ngModel)]="postagem.texto"
+      class="swal2-input"
+      placeholder="Digite o texto da sua postagem"
+      name="texto"
+      id="texto"
+    ></textarea>
+  </form>
+</swal>

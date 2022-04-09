@@ -3,12 +3,58 @@
   margin: 0;
   padding: 0;
 }
-main {
-  background-image: url('https://i.ibb.co/gwydKhD/6033687.jpg');
-  width: 100vw;
-  height: 100vh;
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
 }
+
+.titulo {
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  background-color: #470557;
+  border-radius: 5px;
+  transition: 500ms all;
+}
+
+li:hover {
+  background-color: #c89ce4;
+}
+
+button {
+  text-transform: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: none;
+}
+
+input {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: 1px solid red;
+}
+
 .img-ce {
   width: 110%;
   padding: 0;
@@ -17,3 +63,33 @@ main {
   box-shadow: 10px 13px 7px rgb(61, 4, 49);
 }
 
+.feed {
+  width: 50vw;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: #f1f5f8;
+  margin-top: 10rem;
+  border-radius: 10px;
+  height: auto;
+  padding: 2rem 4rem;
+  text-align: justify;
+}
+
+.feed-page {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://i.ibb.co/gwydKhD/6033687.jpg");
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.sem-conteudo-ctn {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 6.5rem;
+}
+
+.sem-conteudo--texto {
+  font-size: 1.5rem;
+}

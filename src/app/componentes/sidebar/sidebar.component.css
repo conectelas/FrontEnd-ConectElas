@@ -10,14 +10,15 @@ aside {
   -webkit-backdrop-filter: blur(9.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 215px;
-  height: 100vh;
   position: fixed;
   padding-top: 2rem;
+  align-self: flex-start;
+  left: 0;
+  bottom: 0;
 }
 
 .nomeUsuario {
@@ -28,17 +29,21 @@ aside {
 .fotoUsuario {
   border-radius: 100%;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
+
 .qntd {
   font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .post-qntd {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 500;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -53,6 +58,16 @@ aside {
   flex-direction: column;
   gap: 1.5rem;
 }
+
+.link {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .link-ctn {
   display: flex;
   align-items: center;
@@ -62,12 +77,19 @@ aside {
 #sair {
   margin-top: 2rem;
 }
-a{
-text-decoration: none;
 
-}
 .ativo {
   width: 100px;
   height: 100px;
   background-color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  height: 200px;
+  padding-top: 1rem;
 }

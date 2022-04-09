@@ -1,18 +1,18 @@
-import { TemaModel } from "./TemaModel"
-import { UsuarioModel } from "./UsuarioModel"
+import { TemaModel } from './TemaModel';
+import { UsuarioModel } from './UsuarioModel';
 
 export class PostagemModel {
+  public id: number;
 
-    public id: number
+  public titulo: string;
 
-    public titulo: string
+  public texto: string;
 
-    public texto: string
+  public data: Date;
 
-    public data: Date
+  public foto: string;
 
-    public usuario: UsuarioModel
-    
-    public tema: TemaModel
+  public usuario: UsuarioModel = new UsuarioModel();
 
+  public tema: TemaModel = new TemaModel();
 }
