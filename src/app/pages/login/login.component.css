@@ -1,24 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=Comfortaa:wght@300;700&family=Gothic+A1:wght@700&family=Josefin+Sans:wght@100;200;300&family=Maven+Pro&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@100&family=Press+Start+2P&family=Raleway:wght@300&family=Red+Hat+Mono&family=Smooch+Sans:wght@200&family=Yanone+Kaffeesatz:wght@300;400&display=swap");
 
-.card-ctn {
-  border-top-left-radius: 40px !important;
-  border-bottom-left-radius: 60px !important;
+
+/*poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Syne&display=swap');
+/*--------------------------------------------------------*/
+
+/*syne*/
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+/*----*/
+
+*{
+  /*font-family: 'Poppins', sans-serif;*/
+  font-family: 'Syne', sans-serif;
 }
+
+
 
 /* glasmorfism*/
 .textin {
   box-sizing: border-box;
   box-shadow: 58px 20px 100px #bc8fcabb;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 60px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  
+  background: rgba( 143, 84, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
 
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(50px);
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 /* login caixa/div */
 .login {
   background-color: #fffeff;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.login label{
+  color: #550990;
 }
 
 /* background  */
@@ -36,14 +57,24 @@
 /* caixa input */
 .login input {
   margin-top: 2px;
-  border-radius: 60px;
-  background-color: rgba(224, 79, 230, 0.219);
-  font-family: "Montserrat Alternates", sans-serif, monospace!important;
-  color: #ffffff !important;
+  /*border-radius: 60px;
+  background-color: rgba(242, 11, 250, 0.198);
+  
+  color: #ffffff !important;*/
+
+
+
+  background: rgba( 192, 72, 255, 0.1 );
+
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
 
 .login input:focus {
-  outline-color: aqua;
+  outline-color: rgb(123, 0, 255);
 }
 
 .f-st {
@@ -54,8 +85,43 @@
   font-weight: bold;
 }
 
+.h1-ola {
+  
+background: #550990;
+background: -webkit-linear-gradient(to right, #550990 0%, #D417D4 43%, #830A90 100%);
+background: -moz-linear-gradient(to right, #550990 0%, #D417D4 43%, #830A90 100%);
+background: linear-gradient(to right, #550990 0%, #D417D4 43%, #830A90 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.h3-seja{
+  background: #FFFFFF;
+background: -webkit-linear-gradient(to right, #FFFFFF 50%, #e920e9 50%);
+background: -moz-linear-gradient(to right, #FFFFFF 50%, #e920e9 50%);
+background: linear-gradient(to right, #FFFFFF 50%, #e920e9 50%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.linhaComTexto {
+  width: 100%;
+  height: 20px;
+  border-bottom: 1px solid rgba(83, 83, 83, 0.23);
+  text-align: center;
+}
+
+.linhaComTexto > span {
+
+  color: #550990;
+  text-transform: uppercase;
+  font-size: 15px;
+  background-color: #fffffffd;
+  padding: 0 10px;
+}
+
+
 .c-inp {
-  color: #660590;
+  
 }
 .color-text {
   font-family: "Montserrat Alternates", sans-serif, monospace!important;
@@ -81,8 +147,8 @@
   transition    : 0.5s;
   line-height   : 30px;
   margin-left: 30px;
-  background-color: rgb(107, 6, 128);
-  color: #e95db3;
+  background-color: #550990;
+  color: #ffffff;
   border-radius: 30px!important;
 
 }
