@@ -7,6 +7,8 @@ import { FeedComponent } from './pages/feed/feed.component';
 import { PostEditComponent } from './pages/edit/post-edit/post-edit.component';
 import { TemaEditComponent } from './pages/edit/tema-edit/tema-edit.component';
 import { TemaComponent } from './pages/tema/tema.component';
+import { UserEditComponent } from './pages/edit/user-edit/user-edit.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -19,7 +21,8 @@ const routes: Routes = [
   { path: 'tema', component: TemaComponent},
 
   { path: 'tema-edit/:id', component: TemaEditComponent},
-  { path: 'postagem-edit/:id', component: PostEditComponent}
+  { path: 'postagem-edit/:id', component: PostEditComponent},
+  {path: 'user-edit/:id', component: UserEditComponent}
 ];
 
 @NgModule({
