@@ -16,7 +16,7 @@ import { environment } from 'src/environments/environment.prod';
 export class FeedComponent implements OnInit {
   posts: PostagemModel[];
   currentFeed: string;
-  @Input() tipoDeFeed: any = 'all';
+  @Input() tipoDeFeed: any = 'home';
 
   constructor(
     private router: Router,

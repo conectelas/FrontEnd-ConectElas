@@ -23,10 +23,9 @@ export class PostComponent implements OnInit {
   }
 
   isValidPost() {
-    console.log(this.tipoDeFeed, this.content.tema.nome);
     if (this.tipoDeFeed !== 'usuario') {
       if (
-        this.tipoDeFeed !== 'all' &&
+        this.tipoDeFeed !== 'home' &&
         this.content.tema.nome !== this.tipoDeFeed
       ) {
         this.showPost = false;
