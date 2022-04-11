@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import {
   SwalPortalTarget,
   SwalPortalTargets,
@@ -21,6 +21,7 @@ export class SidebarComponent implements OnInit {
   @ViewChild('links') links: any;
   nome: string = environment.nome;
   foto: string = environment.foto;
+  id: number = environment.id;
   totalPosts: number = environment.totalPosts;
   postagem = new PostagemModel();
   target: SwalPortalTarget;
@@ -31,10 +32,14 @@ export class SidebarComponent implements OnInit {
     private router: Router,
     private postagemService: PostagemService,
     private atualizarPostsService: AtualizarPostsService,
-    public readonly swalTargets: SwalPortalTargets
+    public readonly swalTargets: SwalPortalTargets,
+    private activatedRoute: ActivatedRoute
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    // if (this.activatedRoute.snapshot.queryParams['update']) {
+    // }
+  }
   ngAfterViewInit() {
     // const li = this.links.nativeElement.children;
     // [...li].forEach((link) => {

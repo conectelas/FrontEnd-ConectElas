@@ -1,0 +1,164 @@
+@import url("https://fonts.google.com/specimen/Poppins?query=poppins");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  padding-top: 8rem;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=955&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* glasmorfism*/
+
+.sombra-maluca {
+  background: rgba(86, 34, 101, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  /* background: rgba(228, 148, 229, 0.1);
+
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );*/
+}
+
+/* caixa input */
+.input-ctn input {
+  margin-top: 2px;
+  border-radius: 60px;
+
+  background: rgba(160, 59, 247, 0.25);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+
+  font-family: "Poppins", "sans-serif", monospace !important;
+  color: #ffffff !important;
+  border: 3px solid #ff8df6;
+}
+
+.input-ctn input::placeholder {
+  color: #ffffff;
+}
+
+.input-ctn label {
+  padding-top: 5px;
+  color: #f1eef1;
+  font-size: 20px;
+}
+
+.input-ctn select {
+  border-radius: 60px;
+  background: rgba(160, 59, 247, 0.25);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+  border: 3px solid #ff8df6;
+  color: white;
+}
+
+.input-ctn select option {
+  background: rgba(160, 59, 247, 0.25);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+  color: black;
+}
+
+select {
+  color: #ffffff;
+}
+
+.input-ctn input:focus {
+  border-color: none;
+}
+
+.input-ctn option::placeholder:active {
+  color: white;
+}
+
+/*------Tetxo label input------*/
+
+/*------Imagem user------*/
+
+.img img {
+  width: 70px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.img h3 {
+  display: inline;
+  align-items: center;
+  padding-left: 10px;
+  color: white;
+}
+
+/*--------------------------------------------------------*/
+
+/*-------------text center-----------------*/
+
+.input-ctn h3 {
+  text-align: center;
+  color: white;
+  padding-top: 25px;
+}
+
+/*------Button------*/
+
+.btn {
+  font-family: "Poppins", "sans-serif", monospace;
+  font-size: 15pt;
+  font-weight: bold;
+  margin-right: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  line-height: 30px;
+  margin-left: 30px;
+  background-color: rgba(196, 22, 231, 0.322);
+  color: #fffeff;
+  border-radius: 30px !important;
+}
+
+.botao-hover:hover {
+  background-color: #d000ff;
+  color: white;
+  transition: 1.2s;
+}
+
+.textin h3 {
+  padding-top: 135px;
+  color: #ffd4fb;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.bg-maluco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-maluco h3 {
+  flex-direction: row;
+}
+
+/*--------------------------------------------------------*/
+
+/*------Animação css (n sei oq)------*/
+@keyframes animate {
+  0% {
+    background-position-y: 0px;
+  }
+
+  100% {
+    background-position-y: -480px;
+  }
+}

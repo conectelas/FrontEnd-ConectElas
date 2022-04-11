@@ -38,6 +38,7 @@ import { MinhasPostagensComponent } from './pages/minhas-postagens/minhas-postag
 import { FeedHomeComponent } from './componentes/feed-home/feed-home.component';
 import { FeedUsuarioComponent } from './pages/feed-usuario/feed-usuario.component';
 import { MarketplaceComponent } from './pages/marketplace/marketplace.component';
+import { UserEditComponent } from './pages/edit/user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { MarketplaceComponent } from './pages/marketplace/marketplace.component'
     FeedHomeComponent,
     FeedUsuarioComponent,
     MarketplaceComponent,
+    UserEditComponent,
   ],
   imports: [
     BrowserModule,

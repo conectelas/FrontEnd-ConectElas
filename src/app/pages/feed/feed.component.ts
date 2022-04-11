@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PostagemModel } from 'src/app/model/PostagemModel';
 import { UsuarioModel } from 'src/app/model/UsuarioModel';
 import { AtualizarPostsService } from 'src/app/service/atualizar-posts.service';
@@ -23,9 +23,9 @@ export class FeedComponent implements OnInit {
   constructor(
     private router: Router,
     private postagemService: PostagemService,
-    private authService: AuthService
-  ) // private atualizarPostsService: AtualizarPostsService
-  {}
+    private authService: AuthService, // private atualizarPostsService: AtualizarPostsService
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   ngOnInit() {
     if (environment.token == '') {

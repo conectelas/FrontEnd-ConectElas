@@ -6,54 +6,63 @@ import { UsuarioLogin } from '../model/UsuarioLogin';
 import { UsuarioModel } from '../model/UsuarioModel';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthService {
+  constructor(private http: HttpClient) {}
 
-  constructor(
-    private http: HttpClient) { }
-
-  entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
-    return this.http.post<UsuarioLogin>('https://conectelas.herokuapp.com/usuarios/login', usuarioLogin)
+  entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin> {
+    return this.http.post<UsuarioLogin>(
+      'https://conectelas.herokuapp.com/usuarios/login',
+      usuarioLogin
+    );
   }
 
-  cadastrar(usuarioModel: UsuarioModel){
-    return this.http.post<UsuarioModel>('https://conectelas.herokuapp.com/usuarios/cadastrar', usuarioModel)
+  cadastrar(usuarioModel: UsuarioModel) {
+    return this.http.post<UsuarioModel>(
+      'https://conectelas.herokuapp.com/usuarios/cadastrar',
+      usuarioModel
+    );
   }
 
   atualizar(usuario: UsuarioModel): Observable<UsuarioModel> {
-    return this.http.put<UsuarioModel>('https://conectelas.herokuapp.com/usuarios/atualizar' , usuario)
+    return this.http.put<UsuarioModel>(
+      'https://conectelas.herokuapp.com/usuarios/',
+      usuario,
+      { headers: { Authorization: environment.token } }
+    );
   }
 
-  getByIdUsuario(id: number): Observable<UsuarioModel>{
-    return this.http.get<UsuarioModel>(`https://conectelas.herokuapp.com/usuarios/${id}`)
+  getByIdUsuario(id: number): Observable<UsuarioModel> {
+    return this.http.get<UsuarioModel>(
+      `https://conectelas.herokuapp.com/usuarios/${id}`
+    );
   }
 
-  putUsuario(usuario: UsuarioModel): Observable<UsuarioModel> {
-    return this.http.put<UsuarioModel>('https://conectelas.herokuapp.com/usuarios', usuario)
-  }
+  // putUsuario(usuario: UsuarioModel): Observable<UsuarioModel> {
+  //   return this.http.put<UsuarioModel>(
+  //     'https://conectelas.herokuapp.com/usuarios',
+  //     usuario
+  //   );
+  // }
 
   logado() {
-    let ok: boolean  = false
+    let ok: boolean = false;
 
-    if(environment.token != '') {
-      ok = true
+    if (environment.token != '') {
+      ok = true;
     }
 
-    return ok
+    return ok;
   }
 
+  adm() {
+    let ok: boolean = false;
 
-  adm(){
-    let ok: boolean = false
-
-    if (environment.tipo == 'adm'){
-      ok = true
+    if (environment.tipo == 'adm') {
+      ok = true;
     }
 
-    return ok
+    return ok;
   }
-
 }
-
-

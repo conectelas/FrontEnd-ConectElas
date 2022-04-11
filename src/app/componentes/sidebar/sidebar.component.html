@@ -49,7 +49,7 @@
       </li> -->
       <li class="link-ctn">
         <div *ngIf="linkClicado === 'Editar Perfil'" class="ativo"></div>
-        <a href="" class="link">
+        <a [routerLink]="['/user-edit', id]" class="link">
           <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
           Editar Perfil</a
         >
