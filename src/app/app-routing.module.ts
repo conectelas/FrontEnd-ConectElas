@@ -17,7 +17,7 @@ import { MarketplaceComponent } from './pages/marketplace/marketplace.component'
 export const routes: Routes = [
   { path: '', redirectTo: 'home-desktop', pathMatch: 'full' },
 
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeDesktopComponent },
   { path: 'login', component: LoginComponent },
   { path: 'cadastro', component: CadastroComponent },
   { path: 'home-desktop', component: HomeDesktopComponent },

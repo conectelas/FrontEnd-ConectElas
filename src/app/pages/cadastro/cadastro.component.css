@@ -1,114 +1,169 @@
-@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=Comfortaa:wght@300;700&family=Gothic+A1:wght@700&family=Josefin+Sans:wght@100;200;300&family=Maven+Pro&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@100&family=Press+Start+2P&family=Raleway:wght@300&family=Red+Hat+Mono&family=Smooch+Sans:wght@200&family=Yanone+Kaffeesatz:wght@300;400&display=swap");
+@import url("https://fonts.google.com/specimen/Poppins?query=poppins");
 
-.card-ctn {
-  border-top-left-radius: 40px !important;
-  border-bottom-left-radius: 60px !important;
+* {
+  font-family: "Poppins", sans-serif;
+}
+/*https://images.unsplash.com/photo-1558481795-7f0a7c906f5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=896&q=80*/
+main {
+  height: 100vh;
+  padding-top: 30px;
+  background-image: url(https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=955&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* glasmorfism*/
 .textin {
   box-sizing: border-box;
-  box-shadow: 58px 20px 100px #bc8fcabb;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 60px;
+  border-radius: 35px;
+  color: #c510ed;
+  padding-top: 8rem;
+}
 
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(50px);
+.sombra-maluca {
+  /* box-shadow: 0px 2px 96px -14px rgba(255,0,204,0.6);
+  border-radius: 35px;*/
+
+  background: rgba(228, 148, 229, 0.1);
+
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.textin h3 {
+  color: #ffd4fb;
+  font-size: 50px;
+  text-transform: capitalize;
 }
 
 /* login caixa/div */
 .login {
-  background-color: #fffeff;
-}
-
-/* background  */
-.img-bg {
-  height: 100% !important;
-  width: 100% !important;
-  background-image: url(https://i.ibb.co/GPfN1b0/2729833.jpg);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: solid #8a02a8;
 }
 
 /* caixa input */
 .login input {
   margin-top: 2px;
   border-radius: 60px;
-  background-color: rgba(224, 79, 230, 0.219);
-  font-family: "Montserrat Alternates", sans-serif, monospace!important;
+
+  background: rgba(160, 59, 247, 0.25);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+
+  font-family: "Poppins", "sans-serif", monospace !important;
   color: #ffffff !important;
+  border: 3px solid #ff8df6;
+}
+
+.login input::placeholder {
+  color: #ffffff;
+}
+
+.login label {
+  color: #f1eef1;
+  font-size: 20px;
+}
+
+.login select {
+  border-radius: 60px;
+  background: rgba(160, 59, 247, 0.25);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+  border: 3px solid #ff8df6;
+}
+
+.login select option {
+  background: rgba(160, 59, 247, 0.25);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+}
+
+select {
+  color: #ffffff;
 }
 
 .login input:focus {
-  outline-color: aqua;
+  border-color: none;
 }
+
+.login select option::placeholder:active {
+  color: white;
+}
+
+/*------Tetxo label input------*/
 
 .f-st {
   margin-top: 2px;
-  font-family: "Montserrat Alternates", sans-serif, monospace;
+  font-family: "Poppins", "sans-serif", monospace;
   font-size: 18px;
-  color: #6148bf;
+
+  color: #8904a7;
   font-weight: bold;
+  /*negrito*/
 }
+
+/*------Olá------*/
 
 .c-inp {
-  color: #660590;
+  font-family: "Poppins", "sans-serif", monospace !important;
+  font-size: 72px;
+  text-transform: capitalize;
+  color: white;
 }
-.color-text {
-  font-family: "Montserrat Alternates", sans-serif, monospace!important;
-  color: #ffffff !important;
-  font-size: 14px;
-  font-weight: bold;
-}
+
+/*--------------------------------------------------------*/
+
+/*------Imagem lado direito------*/
 
 .img-log {
-  margin-top: 0px;
   width: 350px;
-  height: auto;
-  margin-left: -50px;
+  padding-top: 70px;
 }
+
+.img-log img {
+  width: 55px;
+  height: 45px;
+}
+
+/*--------------------------------------------------------*/
+
+/*------Button------*/
 
 .btn {
-  font-family   : 'VT323', monospace;
-  font-size     : 15pt;
-  font-weight   : bold;
-  margin-right  : 50px;
+  font-family: "Poppins", "sans-serif", monospace;
+  font-size: 15pt;
+  font-weight: bold;
+  margin-right: 50px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition    : 0.5s;
-  line-height   : 30px;
+  transition: 0.5s;
+  line-height: 30px;
   margin-left: 30px;
-  background-color: rgb(107, 6, 128);
-  color: #e95db3;
-  border-radius: 30px!important;
-
-}
-.btn-1:hover {
-  background      : #06000e url();
-  color           : rgb(238, 238, 238);
-  transition-delay: 0.5s;
-  background-size : auto;
-  animation       : animate 0.8s steps(8) forwards;
-
+  background-color: rgba(196, 22, 231, 0.322);
+  color: #fffeff;
+  border-radius: 30px !important;
 }
 
-.btn-2:hover{
-  background      : rgb(160, 0, 93) url();
-  color           : #ffffff;
-  transition-delay: 0.5s;
-  background-size : auto;
-  animation       : animate 0.8s steps(8) forwards;
+.botao-hover:hover {
+  background-color: #d000ff;
+  color: white;
+  transition: 1.2s;
 }
 
+/*--------------------------------------------------------*/
+
+/*------Animação css (n sei oq)------*/
 @keyframes animate {
   0% {
-      background-position-y: 0px;
+    background-position-y: 0px;
   }
 
   100% {
-      background-position-y: -480px;
+    background-position-y: -480px;
   }
 }

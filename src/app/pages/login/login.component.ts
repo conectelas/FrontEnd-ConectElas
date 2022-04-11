@@ -27,6 +27,8 @@ export class LoginComponent implements OnInit {
   }
 
   entrar() {
+    console.log('tentou entrar');
+    console.log(this.usuarioLogin);
     this.authService.entrar(this.usuarioLogin).subscribe(
       (resp: UsuarioLogin) => {
         this.usuarioLogin = resp;
