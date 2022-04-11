@@ -47,15 +47,14 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
     HttpClientModule,
     FormsModule,
     ModalModule.forRoot(),
-    OrderModule
-
-
+    OrderModule,
   ],
-  providers: [{
-    provide: LocationStrategy,
-    useClass: HashLocationStrategy,
-  }],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy,
+    },
+  ],
   bootstrap: [AppComponent],
 })
-
 export class AppModule {}
