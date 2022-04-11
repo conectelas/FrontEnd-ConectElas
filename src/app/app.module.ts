@@ -30,6 +30,12 @@ import { SidebarComponent } from './componentes/sidebar/sidebar.component';
 import { PostComponent } from './componentes/post/post.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { EmpregabilidadeComponent } from './pages/empregabilidade/empregabilidade.component';
+import { HeaderComponent } from './componentes/header/header.component';
+import { MinhasPostagensComponent } from './pages/minhas-postagens/minhas-postagens.component';
+import { FeedHomeComponent } from './componentes/feed-home/feed-home.component';
+import { FeedUsuarioComponent } from './pages/feed-usuario/feed-usuario.component';
+import { MarketplaceComponent } from './pages/marketplace/marketplace.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +60,12 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
     SidebarComponent,
     PostComponent,
     CapitalizePipe,
+    EmpregabilidadeComponent,
+    HeaderComponent,
+    MinhasPostagensComponent,
+    FeedHomeComponent,
+    FeedUsuarioComponent,
+    MarketplaceComponent,
   ],
   imports: [
     BrowserModule,

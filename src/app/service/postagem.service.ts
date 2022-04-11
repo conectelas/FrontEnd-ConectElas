@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { PostagemModel } from '../model/PostagemModel';
+import { UsuarioModel } from '../model/UsuarioModel';
 
 @Injectable({
   providedIn: 'root',
@@ -55,6 +56,13 @@ export class PostagemService {
     return this.http.delete(
       `https://conectelas.herokuapp.com/postagens/${id}`,
       this.headers
+    );
+  }
+
+  usuarioFeed(): Observable<UsuarioModel> {
+    return this.http.get<UsuarioModel>(
+      'https://conectelas.herokuapp.com/postagens/' + environment.id,
+      { headers: { Authorization: environment.token } }
     );
   }
 }

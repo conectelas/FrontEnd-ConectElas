@@ -1,19 +1,23 @@
-<section>
+<section *ngIf="showPost">
   <div class="info-user">
     <img
+      *ngIf="loader !== 'usuario'"
       class="info-user--img"
       src="{{ content.usuario.foto }}"
       alt=""
       width="125"
       height="125"
     />
-    <p class="info-user--nome">{{ content.usuario.nome }}</p>
+    <p class="info-user--nome">
+      {{ content.usuario.nome }}
+    </p>
+    <p>Tema: {{ content.tema.nome }}</p>
     <p class="info-user--data">{{ content.data }}</p>
   </div>
   <div class="post-info">
     <p class="titulo-post">{{ content.titulo }}</p>
     <img
-      *ngIf="content.foto !== ''"
+      *ngIf="content.foto !== '' && content.foto !== null"
       class="foto-post"
       src="{{ content.foto }}"
       alt=""

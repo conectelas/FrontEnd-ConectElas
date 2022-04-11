@@ -7,6 +7,7 @@ import {
 import { PostagemModel } from 'src/app/model/PostagemModel';
 import { TemaModel } from 'src/app/model/TemaModel';
 import { PostagemService } from 'src/app/service/postagem.service';
+import { ReloaderService } from 'src/app/service/reloader.service';
 import { environment } from 'src/environments/environment.prod';
 import Swal from 'sweetalert2';
 import swal, { SweetAlertOptions } from 'sweetalert2';
@@ -29,7 +30,8 @@ export class SidebarComponent implements OnInit {
   constructor(
     private router: Router,
     private postagemService: PostagemService,
-    public readonly swalTargets: SwalPortalTargets
+    public readonly swalTargets: SwalPortalTargets,
+    private reloaderService: ReloaderService
   ) {}
 
   ngOnInit() {}
@@ -71,4 +73,12 @@ export class SidebarComponent implements OnInit {
       );
     },
   };
+
+  changeFeed(modo: string) {
+    this.reloaderService.changeFeed(modo);
+  }
+
+  mudar(rota: string) {
+    this.router.navigate([rota]);
+  }
 }

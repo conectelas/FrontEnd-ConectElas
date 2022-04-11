@@ -35,11 +35,11 @@
         </button>
       </li>
       <li class="link-ctn">
-        <div *ngIf="linkClicado === 'Minhas postagens'" class="ativo"></div>
-        <a href="" class="link">
+        <div class="ativo"></div>
+        <button class="link" (click)="mudar('/feed/usuario')">
           <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
-          Minhas postagens</a
-        >
+          Minhas postagens
+        </button>
       </li>
       <li class="link-ctn">
         <div *ngIf="linkClicado === 'Meu Perfil'" class="ativo"></div>
