@@ -1,11 +1,11 @@
-body{
+.bg-cor{
   display:flex;
   align-items:center;
   justify-content:center;
   padding: 0;
   margin: 0;
   background-size: cover;
-  background: linear-gradient(45deg, #8536a7, #9145B6, #B958A5, #230d38 );
+  background: linear-gradient(25deg, #8536a7, #a264c2, #B958A5, #230d38 );
   background-size: 200% 300%;
   animation: color 5s ease-in infinite;
 }
@@ -19,9 +19,13 @@ background-position: 0% 50%;
 background-position: 100% 50%;
   }
   100% {
-background-position: 50% 100%;
+background-position: 50% 50%;
   }
+  100% {
+    background-position: 50% 100%;
+      }
 }
+
 /* --Background-- */
 .card-bg {
 background: rgba( 122, 76, 161, 0.50 );
@@ -34,7 +38,7 @@ border: 2px solid rgba(248, 237, 237, 0.18);
 -webkit-border-radius: 20px;
 -moz-border-radius: 20px;
 border-radius: 20px;
-height:430px;
+height:500px;
 }
 /* --- Cards Config --- */
 .img-border {
@@ -43,17 +47,36 @@ height:430px;
 .crd-txt {
   font-size: 16pt;
   font-family: 'Gothic A1', sans-serif, monospace !important;
-  color: rgb(188, 130, 211);
+  color: rgb(118, 41, 148);
 }
 .crd-txt2 {
   font-size: 12pt;
   font-family: 'Josefin Sans', sans-serif, monospace !important;
   color: rgb(245, 244, 245);
 }
+.card-eft{
+  background-color: rgba(225, 21, 143, 0.001);
+  border-radius: 5%;
+  padding-top: 0px;
+  font-family: Roboto;
+}
+
+
+.card-eft:hover{
+  background-color: rgba(224, 33, 173, 0.1);
+  border-radius: 5%;
+  padding-top: 2px;
+  transform:scale(1.1);
+  transition: 0.5s;
+}
+
+
+
+
 /* ---Sobre o projeto ---- */
 .sobre {
 background-image: url('https://i.ibb.co/gwydKhD/6033687.jpg');
-color:white;
+color:rgb(255, 255, 255);
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -64,7 +87,7 @@ z-index: -1;
 
 
 .sobre-bg { /* Polimorphism Text*/
-background: rgba( 105, 44, 163, 0.1 );
+background: rgba(159, 113, 202, 0.1);
 box-shadow: 5 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 3px );
 -webkit-backdrop-filter: blur( 3px );
@@ -172,7 +195,7 @@ footer{
   height: 40px;
   width: 40px;
   background-color: rgba(255,255,255,0.2);
-  margin-right: 0px 10px 0px 10px;
+  margin-right: 0px 5px 0px 5px;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
@@ -186,4 +209,169 @@ footer{
   cursor: pointer;
 
 
+}
+/* fim footer */
+
+/* efeito cards */
+
+/*-----Missão ---------*/
+
+#missaovisao{
+  font-family: Roboto;
+}
+.missaoh1{
+  color:whitesmoke;
+}
+
+.picture{
+  background-color: #692CA3;
+  border-radius: 8%;
+  padding: 20px;
+  margin-bottom: 7px;
+  color:whitesmoke;
+}
+
+.picture:hover{
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+/* background visão */
+.folhasreais{
+  background-image: url('https://i.ibb.co/wS83CDm/SL-030221-41190-19.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  z-index: 0;
+}
+
+/*  efeito texto  */
+.crd-texto{
+  background-color: #3F2377;
+  border-radius: 2%;
+  padding: 20px;
+  margin-bottom: 2px;
+  color:whitesmoke;
+}
+
+.crd-texto:hover{
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.equipeh1{
+  color:rgb(18, 16, 18);
+  margin-top: 2rem;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+}
+
+.wrapper{
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: 0px auto;
+}
+.about-info img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.cards-container{
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 80px;
+}
+.card:nth-child(1) .front-card{
+  background:#9f4cbd;
+}
+.card:nth-child(2) .front-card{
+  background: url() center/cover no-repeat;
+  background:#9f4cbd;
+}
+.card:nth-child(3) .front-card{
+  background: url() center/cover no-repeat;
+  background:#9f4cbd;
+}
+.card:nth-child(4) .front-card{
+  background:  url() center/cover no-repeat;
+  background:#9f4cbd;
+}
+
+.card:nth-child(5) .front-card{
+  background: url() center/cover no-repeat;
+  background:#9f4cbd;
+}
+body{
+  background-color: #141212;
+}
+
+.card1{
+
+  height: 450px;
+  perspective: 1000px;
+  width: 100%;
+  perspective: 1000px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+
+}
+.card{
+  height: 350px;
+  perspective: 1000px;
+  width: 100%;
+}
+.card-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0px 0px 9px -3px rgba(239, 114, 248, 0.976);
+}
+.card:hover .card-wrapper{
+  transform: rotateY(180deg);
+}
+.front-card, .rear-card{
+  border-radius: 10px;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.rear-card{
+  text-align: center;
+  transform: rotateY(180deg);
+  background:#822ecc;
+  ;
+  color: rgb(248, 248, 248);
+  padding: 20px;
+}
+.front-card div{
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+  color: rgb(241, 236, 241); /* cor font frente card*/
+  line-height: 1.6;
+}
+.rear-card p{
+  line-height: 1.6;
+  font-size: 15px;
+  font-weight: 300;
+}
+.about-info{
+  margin-top: 5px;
+}
+.about-info div h2{
+  font-size: 19px;
+  padding: 10px 0 10px;
 }
