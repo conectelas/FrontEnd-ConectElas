@@ -86,6 +86,6 @@ export class SidebarComponent implements OnInit {
   }
 
   sair() {
-    window.location.href = 'http://localhost:4200/home-desktop';
+    window.location.href = `http://${environment.baseUrl}/home-desktop`;
   }
 }

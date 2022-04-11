@@ -7,4 +7,5 @@ export const environment = {
   foto: '',
   totalPosts: 0,
   server: 'http://localhost:8080/',
+  baseUrl: 'https://conectelas.netlify.app',
 };
