@@ -18,6 +18,7 @@ export class PostComponent implements OnInit {
   @Input() tipoDeFeed: string;
   mostrarBotoes: boolean = false;
   showPost: boolean = true;
+  tipoUsuario = environment.tipo;
 
   constructor(
     private postagemService: PostagemService,

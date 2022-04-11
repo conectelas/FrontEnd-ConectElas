@@ -12,7 +12,7 @@
       {{ content.usuario.nome }}
     </p>
     <p>Tema: {{ content.tema.nome }}</p>
-    <div *ngIf="mostrarBotoes">
+    <div *ngIf="mostrarBotoes || tipoUsuario === 'ADM'">
       <button
         [swal]="editarPostagem"
         style="background-color: transparent; border: none"
