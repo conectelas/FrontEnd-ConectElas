@@ -1,1 +1,17 @@
-<p>feed works!</p>
+<app-header></app-header>
+
+<main class="feed-page">
+  <app-sidebar></app-sidebar>
+
+  <article class="feed">
+    <app-post
+      [tipoDeFeed]="tipoDeFeed"
+      *ngFor="let post of posts | orderBy: key:reverse"
+      [content]="post"
+    ></app-post>
+    <div class="sem-conteudo-ctn">
+      <img width="300" src="assets/img/sem_conteudo.svg" alt="" />
+      <p class="sem-conteudo--texto">Não há mais posts para mostrar!</p>
+    </div>
+  </article>
+</main>

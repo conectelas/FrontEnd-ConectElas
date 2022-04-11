@@ -1,0 +1,52 @@
+<!-- Nav bar -->
+
+<div class="container d-flex">
+  <nav class="navbar navbar-expand-md mb-5 bg">
+    <a class="navbar-brand font-weight-bold" routerLink="/home-desktop">
+      logo + Conect+ Elas</a
+    >
+    <!-- logo aqui-->
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="nav nav-tabs align-items-end">
+        <li class="nav-item btn btn1">
+          <a class="nav-link color-font" routerLink="/">Home</a>
+        </li>
+
+        <li class="nav-item btn btn1">
+          <a class="nav-link color-font" routerLink="/"> Empregabilidade</a>
+        </li>
+
+        <li class="nav-item btn btn1">
+          <a class="nav-link color-font" routerLink="/">Marketplace </a>
+        </li>
+
+        <!-- arrumar depois , FICAR DIREITA -->
+        <li class="nav-item active btn">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="titulo"
+              placeholder="Digite um titulo de postagem para pesquisar"
+            />
+          </div>
+          <!-- (keyup)='findByTituloPostagem()' || [(ngModel)]="tituloPost" || PESQUISAR POSTAGEM -->
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- Nav bar -->

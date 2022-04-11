@@ -1,22 +1,48 @@
-
-
-  <section class="squares form-section">
-    <h1>Enter the Rocket</h1>
-
-    <div class="form-wrapper">
-      <form action="">
-        <div class="input-block">
-          <label for="login-email">Email</label>
-          <input type="email" id="login-email" />
+<main>
+  <div class="corpo">
+    <form action="">
+      <h2>Login</h2>
+      <div class="img-bg">
+        <div class="container align-self-center mt-5">
+          <div class="card-ctn row md-5 mt-5">
+            <div class="col-md-6 text-center textin">
+              <img
+                class="img-log"
+                src="https://i.ibb.co/r3rFhDq/Login-rafiki.png"
+                alt=""
+                width="350"
+              />
+              <h1 class="c-inp">Olá,</h1>
+              <h3 class="text-2">Seja muito bem vinda!</h3>
+            </div>
+            <div class="card-ctn login col-md-6 f-st">
+              <div class="form-group f-s mt-3">
+                <label for="Usuario">Insira seu Usuário</label>
+                <input
+                  [(ngModel)]="usuarioLogin.email"
+                  type="text"
+                  class="form-control color-text"
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Digite seu e-mail cadastrado."
+                />
+                <input
+                  [(ngModel)]="usuarioLogin.senha"
+                  type="password"
+                  name="senha"
+                  placeholder="Senha"
+                  id="senha"
+                />
+                <input type="button" value="Entrar" (click)="entrar()" />
+                <p>
+                  Não tem um login? <a routerLink="/cadastro">Cadastre-se</a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="input-block">
-          <label for="login-password">Password</label>
-          <input type="password" id="login-password" />
-        </div>
-        <button type="submit" class="btn-login">Login</button>
-      </form>
-    </div>
-  </section>
-
-
-
+      </div>
+    </form>
+  </div>
+</main>

@@ -1,1 +1,69 @@
+<<<<<<< HEAD
 <p>menu works!</p>
+=======
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <ul class="navbar-nav mr-auto d-flex align-items-center">
+          <li class="nav-item">
+            <img
+              src="{{ foto }}"
+              alt=""
+              width="60px"
+              height="60px"
+              class="img-fluid rounded-circle"
+            />
+            <br />
+          </li>
+          <li>
+            <p
+              class="nav-link active m-0 font-weight-bold text-dark fs-16"
+              href="#"
+            >
+              {{ nome }}
+            </p>
+          </li>
+
+          <!-- <a *ngFor="let cont of conteudo">
+            {{ cont }}
+          </a> -->
+          <a class="nav-link active" aria-current="page" routerLink="/home"
+            >ConectElas</a
+          >
+          <a class="nav-link active" aria-current="page" href="#">Meu Perfil</a>
+          <a class="nav-link active" aria-current="page" routerLink="/feed"
+            >Feed</a
+          >
+          <a class="nav-link active" aria-current="page" href="#">Quem somos</a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+    <script src="https://ajang sx.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div class="onoff d-flex align-items-center">
+      <input type="checkbox" class="toggle" id="onoff1" />
+      <label for="onoff1"></label>
+    </div>
+  </div>
+  <div>
+    <p class="m-0 ml-5 font-weight-bold text-dark fs-16">
+      <a (click)="sair()" routerLink="/home"
+        >Sair<i class="fa fa-sign-out" aria-hidden="true"></i
+      ></a>
+    </p>
+  </div>
+</nav>
+>>>>>>> dev

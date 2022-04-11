@@ -1,0 +1,101 @@
+
+/* Menu  */
+.navbar-brand {
+  font-size: 20pt;
+  font-family: 'Montserrat', sans-serif !important;
+  color: #f1f0f1 !important;
+  text-decoration: none;
+}
+.color-font {
+  color: #4e0b57 !important;
+}
+
+.log {
+  margin-left: 20px !important;
+}
+
+/*botoes gradiente*/
+.btn {
+  flex: 1 1 auto;
+  margin: 12px;
+  padding: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s;
+  background-size: 200% auto;
+  color: rgb(193, 197, 230);
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px rgba(117, 56, 185, 0.466);
+  border-radius: 20px;
+ }
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-2 {
+  background-image: linear-gradient(to right, #cd89de 0%, #b664ed 51%, #d893e9 100%);
+}
+/* Apresentando funcionalidades */
+.bg {
+background: rgba( 105, 44, 163, 1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 1px;
+border: 1px solid rgba(243, 235, 235, 0.18);
+}
+
+/* --- Botoões do Luiz */
+
+.btn1{
+  color: #fff;
+  background: linear-gradient(135deg, #852d91, #312a6c);
+  font-family: 'Comfortaa', cursive;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: lowercase;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.btn1:hover{
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  animation: rotate 0.7s ease-in-out both;
+}
+.btn1:before,
+.btn1:after{
+  content: '';
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(100%, -25%) translate3d(0, 0, 0);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.btn1:hover:before,
+.btn1:hover:after{
+  opacity: 0.15;
+}
+.btn1:hover:before{ transform: translate3d(50%, 0, 0) scale(0.9); }
+.btn1:hover:after{ transform: translate(50%, 0) scale(1.1); }
+@keyframes rotate{
+  0%{ transform: rotate(0deg); }
+  25%{ transform: rotate(3deg); }
+  50%{ transform: rotate(-3deg); }
+  75%{ transform: rotate(1deg); }
+  100%{ transform: rotate(0deg); }
+}
+@media only screen and (max-width: 767px){
+  .btn1{ margin-bottom: 20px; }
+}
