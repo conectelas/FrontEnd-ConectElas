@@ -35,19 +35,18 @@
         </button>
       </li>
       <li class="link-ctn">
-        <div class="ativo"></div>
         <button class="link" (click)="mudar('/feed/usuario')">
           <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
           Minhas postagens
         </button>
       </li>
-      <li class="link-ctn">
+      <!-- <li class="link-ctn">
         <div *ngIf="linkClicado === 'Meu Perfil'" class="ativo"></div>
         <a href="" class="link">
           <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
           Meu Perfil</a
         >
-      </li>
+      </li> -->
       <li class="link-ctn">
         <div *ngIf="linkClicado === 'Editar Perfil'" class="ativo"></div>
         <a href="" class="link">
@@ -56,10 +55,10 @@
         >
       </li>
       <li class="link-ctn" id="sair">
-        <a href="" class="link">
+        <button (click)="sair()" class="link">
           <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
-          Sair</a
-        >
+          Sair
+        </button>
       </li>
     </ul>
   </nav>
@@ -83,9 +82,9 @@
       id="tema"
     >
       <option value="" selected>Escolha o tema</option>
-      <option value="2">Geral</option>
+      <option value="4">Geral</option>
       <option value="2">Marketplace</option>
-      <option value="2">Empregabilidade</option>
+      <option value="3">Empregabilidade</option>
     </select>
     <input
       type="text"

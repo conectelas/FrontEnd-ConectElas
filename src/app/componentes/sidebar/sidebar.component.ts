@@ -6,8 +6,8 @@ import {
 } from '@sweetalert2/ngx-sweetalert2';
 import { PostagemModel } from 'src/app/model/PostagemModel';
 import { TemaModel } from 'src/app/model/TemaModel';
+import { AtualizarPostsService } from 'src/app/service/atualizar-posts.service';
 import { PostagemService } from 'src/app/service/postagem.service';
-import { ReloaderService } from 'src/app/service/reloader.service';
 import { environment } from 'src/environments/environment.prod';
 import Swal from 'sweetalert2';
 import swal, { SweetAlertOptions } from 'sweetalert2';
@@ -30,8 +30,8 @@ export class SidebarComponent implements OnInit {
   constructor(
     private router: Router,
     private postagemService: PostagemService,
-    public readonly swalTargets: SwalPortalTargets,
-    private reloaderService: ReloaderService
+    private atualizarPostsService: AtualizarPostsService,
+    public readonly swalTargets: SwalPortalTargets
   ) {}
 
   ngOnInit() {}
@@ -64,6 +64,8 @@ export class SidebarComponent implements OnInit {
           Swal.fire({
             title: 'Postagem feita!',
           });
+          this.atualizarPostsService.atualizarPagina();
+          environment.totalPosts += 1;
         },
         (error) => {
           Swal.showValidationMessage(
@@ -74,11 +76,11 @@ export class SidebarComponent implements OnInit {
     },
   };
 
-  changeFeed(modo: string) {
-    this.reloaderService.changeFeed(modo);
-  }
-
   mudar(rota: string) {
     this.router.navigate([rota]);
+  }
+
+  sair() {
+    window.location.href = 'http://localhost:4200/home-desktop';
   }
 }

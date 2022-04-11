@@ -19,6 +19,7 @@ aside {
   align-self: flex-start;
   left: 0;
   bottom: 0;
+  height: 90%;
 }
 
 .nomeUsuario {

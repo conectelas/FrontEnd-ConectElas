@@ -13,6 +13,8 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { FeedComponent } from './pages/feed/feed.component';
 import { LoginComponent } from './pages/login/login.component';
 
+import { routes } from './app-routing.module';
+import { RouterModule, RoutesRecognized } from '@angular/router';
 import { CarouselComponent } from './componentes/carousel/carousel.component';
 import { CardComponent } from './componentes/card/card.component';
 import { MenuNaoLogadoComponent } from './componentes/menu-nao-logado/menu-nao-logado.component';

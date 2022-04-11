@@ -14,7 +14,7 @@ import { EmpregabilidadeComponent } from './pages/empregabilidade/empregabilidad
 import { FeedUsuarioComponent } from './pages/feed-usuario/feed-usuario.component';
 import { MarketplaceComponent } from './pages/marketplace/marketplace.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: '', redirectTo: 'home-desktop', pathMatch: 'full' },
 
   { path: 'home', component: HomeComponent },
@@ -34,7 +34,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
 
   exports: [RouterModule],
 })

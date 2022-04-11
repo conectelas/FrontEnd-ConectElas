@@ -6,7 +6,7 @@
   <article class="feed">
     <app-post
       [tipoDeFeed]="tipoDeFeed"
-      *ngFor="let post of posts"
+      *ngFor="let post of posts | orderBy: key:reverse"
       [content]="post"
     ></app-post>
     <div class="sem-conteudo-ctn">

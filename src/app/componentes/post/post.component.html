@@ -12,6 +12,24 @@
       {{ content.usuario.nome }}
     </p>
     <p>Tema: {{ content.tema.nome }}</p>
+    <div *ngIf="mostrarBotoes">
+      <button
+        [swal]="editarPostagem"
+        style="background-color: transparent; border: none"
+      >
+        <img
+          width="25"
+          src="https://img.icons8.com/ios-glyphs/344/edit--v1.png"
+          alt=""
+        />
+      </button>
+      <button
+        [swal]="deletarPostagem"
+        style="background-color: transparent; border: none"
+      >
+        <img width="25" src="assets/img/lixo.svg" alt="" />
+      </button>
+    </div>
     <p class="info-user--data">{{ content.data }}</p>
   </div>
   <div class="post-info">
@@ -27,3 +45,52 @@
     </p>
   </div>
 </section>
+
+<swal #editarPostagem title="Editar Postagem" [swalOptions]="swalOptionsEdit">
+  <form *swalPortal="undefined">
+    <label for="titulo">Título </label>
+    <input
+      [(ngModel)]="content.titulo"
+      name="titulo"
+      id="titulo"
+      class="swal2-input"
+      type="text"
+      placeholder="Digite o título da postagem"
+    />
+    <select
+      [(ngModel)]="content.tema.id"
+      name="tema"
+      class="swal2-input"
+      id="tema"
+    >
+      <option value="" selected>Escolha o tema</option>
+      <option value="2">Geral</option>
+      <option value="2">Marketplace</option>
+      <option value="2">Empregabilidade</option>
+    </select>
+    <input
+      type="text"
+      class="swal2-input"
+      name="foto"
+      id="foto"
+      [(ngModel)]="content.foto"
+      placeholder="(Opcional) Coloque o link de uma foto"
+    />
+    <label for="texto">O que você quer compartilhar?</label>
+    <textarea
+      [(ngModel)]="content.texto"
+      class="swal2-input"
+      placeholder="Digite o texto da sua postagem"
+      name="texto"
+      id="texto"
+    ></textarea>
+  </form>
+</swal>
+
+<swal
+  #deletarPostagem
+  title="Editar Postagem"
+  [swalOptions]="swalOptionsDelete"
+>
+  <h3>Deseja mesmo apagar a postagem {{ this.content.titulo }}?</h3>
+</swal>

@@ -3,7 +3,7 @@
     <p class="titulo">ConectElas</p>
     <ul>
       <a routerLink="/feed">
-        <li><button>Home</button></li>
+        <li><button>Todas as Postagens</button></li>
       </a>
       <a routerLink="/marketplace">
         <li><button>Marketplace</button></li>
@@ -12,6 +12,11 @@
         <li><button>Empregabilidade</button></li>
       </a>
     </ul>
-    <input type="text" placeholder="Procurar postagem" />
+    <input
+      type="text"
+      placeholder="Procurar postagem"
+      [ngModel]="termo"
+      (change)="procurar()"
+    />
   </nav>
 </header>

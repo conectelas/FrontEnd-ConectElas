@@ -48,14 +48,14 @@ export class PostagemService {
     return this.http.put<PostagemModel>(
       'https://conectelas.herokuapp.com/postagens',
       postagem,
-      this.headers
+      { headers: { Authorization: environment.token } }
     );
   }
 
   deletePostagem(id: number) {
     return this.http.delete(
       `https://conectelas.herokuapp.com/postagens/${id}`,
-      this.headers
+      { headers: { Authorization: environment.token } }
     );
   }
 

@@ -3,9 +3,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PostagemModel } from 'src/app/model/PostagemModel';
 import { UsuarioModel } from 'src/app/model/UsuarioModel';
+import { AtualizarPostsService } from 'src/app/service/atualizar-posts.service';
 import { AuthService } from 'src/app/service/auth.service';
 import { PostagemService } from 'src/app/service/postagem.service';
-import { ReloaderService } from 'src/app/service/reloader.service';
 import { environment } from 'src/environments/environment.prod';
 
 @Component({
@@ -16,13 +16,16 @@ import { environment } from 'src/environments/environment.prod';
 export class FeedComponent implements OnInit {
   posts: PostagemModel[];
   currentFeed: string;
+  key = 'data';
+  reverse = true;
   @Input() tipoDeFeed: any = 'home';
 
   constructor(
     private router: Router,
     private postagemService: PostagemService,
     private authService: AuthService
-  ) {}
+  ) // private atualizarPostsService: AtualizarPostsService
+  {}
 
   ngOnInit() {
     if (environment.token == '') {
