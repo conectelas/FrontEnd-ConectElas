@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SobreComponent } from './pages/sobre/sobre.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 
 import { LoginComponent } from './pages/login/login.component';
@@ -23,7 +24,10 @@ export const routes: Routes = [
   { path: 'cadastro', component: CadastroComponent },
   { path: 'home-desktop', component: HomeDesktopComponent },
   { path: 'minhas-postagens', component: MinhasPostagensComponent },
-
+  //{path: '', redirectTo: 'login',pathMatch: 'full'},
+  { path: 'login', component: LoginComponent },
+  { path: 'cadastro', component: CadastroComponent },
+  { path: 'sobre', component: SobreComponent },
   { path: 'feed', component: FeedComponent },
   { path: 'feed/usuario', component: FeedUsuarioComponent },
   { path: 'empregabilidade', component: EmpregabilidadeComponent },

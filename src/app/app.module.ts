@@ -39,6 +39,7 @@ import { FeedHomeComponent } from './componentes/feed-home/feed-home.component';
 import { FeedUsuarioComponent } from './pages/feed-usuario/feed-usuario.component';
 import { MarketplaceComponent } from './pages/marketplace/marketplace.component';
 import { UserEditComponent } from './pages/edit/user-edit/user-edit.component';
+import { SobreComponent } from './pages/sobre/sobre.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { UserEditComponent } from './pages/edit/user-edit/user-edit.component';
     FeedUsuarioComponent,
     MarketplaceComponent,
     UserEditComponent,
+    SobreComponent,
   ],
   imports: [
     BrowserModule,

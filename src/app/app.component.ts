@@ -1,7 +1,6 @@
-
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from './service/auth.service';
-
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +9,6 @@ import { AuthService } from './service/auth.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-
   constructor(public auth: AuthService) {}
 
   resolution: number = window.innerWidth;
@@ -23,7 +21,6 @@ export class AppComponent implements OnInit {
     window.addEventListener('resize', () => {
       this.resolution = window.innerWidth;
     });
-    
+    AOS.init();
   }
-
 }
