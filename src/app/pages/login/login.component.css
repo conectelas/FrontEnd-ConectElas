@@ -1,0 +1,132 @@
+@import url("https://fonts.google.com/specimen/Poppins?query=poppins");
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  overflow-y: hidden;
+  height: 100vh;
+  background-image: url("http://i.ibb.co/gwydKhD/6033687.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.corpo {
+  padding-top: 5rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 30%;
+  height: 400px;
+
+  box-shadow: 0px 0px 15px 5px rgba(193, 44, 201, 0.411);
+  background: rgba(228, 148, 229, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.corpo h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #c510ed;
+  padding: 20px 0px;
+}
+.corpo h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #f7d1ff;
+  padding: 20px 0px;
+}
+
+.corpo h2::after {
+  display: block;
+  width: 25%;
+  content: "";
+  margin: 10px auto;
+  border-bottom: 3px solid #ab58e6;
+}
+
+.corpo input {
+  display: block;
+  width: 75%;
+  height: 48px;
+  margin: 20px auto;
+  box-sizing: content-box;
+  padding: 2px 5px;
+  transition: 0.2s;
+  margin-top: 2px;
+
+  border-radius: 60px;
+  background: rgba(160, 59, 247, 0.25);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+
+  font-family: "Poppins", "sans-serif", monospace !important;
+  color: #ffffff !important;
+  border: 3px solid #ff8df6;
+}
+
+.corpo input[type="text"]:focus,
+.corpo input[type="password"]:focus {
+  background-color: #5f087271;
+  color: white;
+  transition: 1.2s;
+}
+
+.corpo input[type="text"]::placeholder,
+.corpo input[type="password"]::placeholder {
+  color: #f1eef1;
+  font-size: 20px;
+}
+
+.corpo input[type="text"]::placeholder:focus,
+.corpo input[type="password"]::placeholder:focus {
+  color: rgb(234, 0, 255);
+}
+.corpo input[type="submit"] {
+  background-color: transparent;
+  color: #c510ed;
+  cursor: pointer;
+}
+.corpo input[type="submit"]:hover {
+  background-color: #5f0872;
+  color: white;
+  transition: 1.2s;
+}
+
+.corpo p {
+  text-align: center;
+  color: #e9c2f2;
+}
+
+.corpo p a {
+  color: #ed8ffa;
+  text-decoration: none;
+}
+
+.corpo p a:hover {
+  background-color: #851e9c6c;
+  border-radius: 35px;
+  color: white;
+  transition: 1.2s;
+}
+
+@media screen and (max-width: 900px) {
+  .corpo {
+    width: 70%;
+  }
+}
+
+@media screen and (max-widht: 400px) {
+  .corpo {
+    width: 85%;
+  }
+}

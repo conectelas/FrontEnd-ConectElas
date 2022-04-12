@@ -1,0 +1,169 @@
+@import url("https://fonts.google.com/specimen/Poppins?query=poppins");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+/*https://images.unsplash.com/photo-1558481795-7f0a7c906f5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=896&q=80*/
+main {
+  height: 100vh;
+  padding-top: 30px;
+  background-image: url(https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=955&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* glasmorfism*/
+.textin {
+  box-sizing: border-box;
+  border-radius: 35px;
+  color: #c510ed;
+  padding-top: 8rem;
+}
+
+.sombra-maluca {
+  /* box-shadow: 0px 2px 96px -14px rgba(255,0,204,0.6);
+  border-radius: 35px;*/
+
+  background: rgba(228, 148, 229, 0.1);
+
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.textin h3 {
+  color: #ffd4fb;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+/* login caixa/div */
+.login {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: solid #8a02a8;
+}
+
+/* caixa input */
+.login input {
+  margin-top: 2px;
+  border-radius: 60px;
+
+  background: rgba(160, 59, 247, 0.25);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+
+  font-family: "Poppins", "sans-serif", monospace !important;
+  color: #ffffff !important;
+  border: 3px solid #ff8df6;
+}
+
+.login input::placeholder {
+  color: #ffffff;
+}
+
+.login label {
+  color: #f1eef1;
+  font-size: 20px;
+}
+
+.login select {
+  border-radius: 60px;
+  background: rgba(160, 59, 247, 0.25);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+  border: 3px solid #ff8df6;
+}
+
+.login select option {
+  background: rgba(160, 59, 247, 0.25);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+}
+
+select {
+  color: #ffffff;
+}
+
+.login input:focus {
+  border-color: none;
+}
+
+.login select option::placeholder:active {
+  color: white;
+}
+
+/*------Tetxo label input------*/
+
+.f-st {
+  margin-top: 2px;
+  font-family: "Poppins", "sans-serif", monospace;
+  font-size: 18px;
+
+  color: #8904a7;
+  font-weight: bold;
+  /*negrito*/
+}
+
+/*------Olá------*/
+
+.c-inp {
+  font-family: "Poppins", "sans-serif", monospace !important;
+  font-size: 72px;
+  text-transform: capitalize;
+  color: white;
+}
+
+/*--------------------------------------------------------*/
+
+/*------Imagem lado direito------*/
+
+.img-log {
+  width: 350px;
+  padding-top: 70px;
+}
+
+.img-log img {
+  width: 55px;
+  height: 45px;
+}
+
+/*--------------------------------------------------------*/
+
+/*------Button------*/
+
+.btn {
+  font-family: "Poppins", "sans-serif", monospace;
+  font-size: 15pt;
+  font-weight: bold;
+  margin-right: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  line-height: 30px;
+  margin-left: 30px;
+  background-color: rgba(196, 22, 231, 0.322);
+  color: #fffeff;
+  border-radius: 30px !important;
+}
+
+.botao-hover:hover {
+  background-color: #d000ff;
+  color: white;
+  transition: 1.2s;
+}
+
+/*--------------------------------------------------------*/
+
+/*------Animação css (n sei oq)------*/
+@keyframes animate {
+  0% {
+    background-position-y: 0px;
+  }
+
+  100% {
+    background-position-y: -480px;
+  }
+}

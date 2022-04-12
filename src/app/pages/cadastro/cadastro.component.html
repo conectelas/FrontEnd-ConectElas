@@ -1,0 +1,154 @@
+<!-- <main class="cadastro-page"> -->
+<!-- <div class="img-bg">
+  <div class="container align-self-center ">
+    <div class="card-ctn row md-5  ">
+
+      <div class="card-ctn login col-md-6 f-st ">
+        <div class="form-group f-s mt-3">
+          <label for="Nome" >Insira seu nome completo</label>
+
+          <input [(ngModel)]='usuarioModel.nome' type="text" class="form-control color-text" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+
+        </div>
+
+        <div class="form-group login f-st">
+          <label for="email">Insira o seu melhor e-mail</label>
+
+          <input [(ngModel)]='usuarioModel.email' class="form-control color-text" type="text" name="email" id="email" placeholder="Digite seu email de usuário">
+
+        </div>
+
+        <div class="form-group login f-st">
+          <label for="Foto">Link da foto</label>
+
+          <input [(ngModel)]='usuarioModel.foto' class="form-control color-text" type="text" name="foto" id="foto" placeholder="Digite o link da sua foto">
+
+        </div>
+
+        <div class="form-group login f-st">
+          <label for="Senha">A sua senha precisa ter 8 caracteres!</label>
+
+          <input (input)='confirmaSenha($event)' class="form-control color-text" type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        </div>
+======= -->
+
+<main>
+  <div class="container sombra-maluca align-self-center">
+    <div class="card-ctn row md-5 textin">
+      <div class="card-ctn login col-md-6 f-st">
+        <div class="form-group f-s mt-3">
+          <label for="Nome">Nome completo</label>
+          <input
+            [(ngModel)]="usuarioModel.nome"
+            type="text"
+            class="form-control color-text"
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Digite seu nome"
+          />
+        </div>
+
+        <div class="form-group login f-s">
+          <label for="Usuário">E-mail</label>
+          <input
+            [(ngModel)]="usuarioModel.email"
+            class="form-control color-text"
+            type="text"
+            name="usuario"
+            id="usuario"
+            placeholder="Digite seu email de usuário"
+          />
+        </div>
+
+        <!-- <<<<<<< HEAD
+        <div class="d-flex justify-content-center mb-3">
+          <button type="submit" class="btn btn-outline-dark btn-2 m-20" routerLink='/home-desktop'>Cancelar</button>
+          <button type="submit" class="btn btn-outline-dark btn-1 m-20" (click)='cadastrar()'>Cadastrar</button>
+
+        </div>
+======= -->
+        <div class="form-group login f-st">
+          <label for="Foto">Link da foto</label>
+          <input
+            [(ngModel)]="usuarioModel.foto"
+            class="form-control color-text"
+            type="text"
+            name="foto"
+            id="foto"
+            placeholder="Digite o link da sua foto"
+          />
+        </div>
+
+        <div class="form-group login f-st">
+          <label for="Senha">A sua senha precisa ter 8 caracteres!</label>
+          <input
+            (input)="confirmaSenha($event)"
+            class="form-control color-text"
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="Digite sua senha"
+          />
+        </div>
+
+        <div class="form-group login f-st">
+          <label for="confirmaSenha">Confirme a sua senha, por favor!</label>
+          <input
+            [(ngModel)]="usuarioModel.senha"
+            class="form-control color-text"
+            type="password"
+            name="senha"
+            id="confirmaSenha"
+            placeholder="Confirme sua senha"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="tipo">Tipo de Usuário</label>
+          <select
+            class="form-control label-select"
+            id="tipo"
+            (change)="tipoUser($event)"
+          >
+            <option value="">Selecione um tipo de usuário</option>
+            <option value="Normal">Normal</option>
+            <option value="ADM">Administrador</option>
+          </select>
+        </div>
+        <div *ngIf="tipoUsuario === 'ADM'" class="form-group">
+          <label for="tipo">Token do Administrador</label>
+          <input
+            [(ngModel)]="tokenAdm"
+            type="text"
+            placeholder="Digite o token"
+          />
+        </div>
+
+        <div class="d-flex justify-content-center mb-3">
+          <button
+            type="submit"
+            class="btn btn-outline-dark botao-hover m-20"
+            routerLink="/home"
+          >
+            Cancelar
+          </button>
+          <button
+            type="submit"
+            class="btn btn-outline-dark botao-hover m-20"
+            (click)="cadastrar()"
+          >
+            Cadastrar
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6 text-center textin">
+        <img class="img-log" src="assets/img/Computer login-amico.svg" alt="" />
+        <h1 class="c-inp">Olá,</h1>
+        <h3 class="text-2">Seja muito bem vinda!</h3>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- </main> -->
