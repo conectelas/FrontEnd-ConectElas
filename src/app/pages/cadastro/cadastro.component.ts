@@ -42,18 +42,11 @@ export class CadastroComponent implements OnInit {
       Swal.fire({
         title: 'Senhas não coincidem!',
         showConfirmButton: false,
-        timer: 3000,
+        timer: 5000,
         icon: 'info',
-        width: 600,
-        padding: '3em',
+        imageUrl :"https://i.pinimg.com/originals/c7/a1/d7/c7a1d7dbd17a7eac5f744a80a4359ece.gif",
         color: '#f34534',
-        background: '#fff url(/images/trees.png)',
-        backdrop: `
-          rgba(0,0,123,0.4)
-          url("https://c.tenor.com/dNtJSujn-lYAAAAj/run-pikachu.gif")
-          left top
-          no-repeat
-        `,
+        
       });
     } else if (
       this.tipoUsuario === 'ADM' &&
@@ -62,7 +55,9 @@ export class CadastroComponent implements OnInit {
       Swal.fire({
         title: 'Token invalido',
         timer: 5000,
-        icon: 'warning',
+        imageUrl: "https://i.pinimg.com/originals/31/65/06/31650631b14710d75ab00a32fc5dca15.gif",
+        color: '#f34534',
+      
       });
     } else {
       // subscribe vai sobrecrever a senha em formato json para o backend receber
@@ -77,17 +72,9 @@ export class CadastroComponent implements OnInit {
             showConfirmButton: false,
             timer: 3000,
             icon: 'success',
-            width: 600,
-            padding: '3em',
+            imageUrl: "https://c.tenor.com/Tx1SfMNQtdAAAAAC/cute-kitten.gif",
             color: '#716add',
-            background: '#fff url(/images/trees.png)',
-            backdrop: `
-            rgba(0,0,123,0.4)
-            url("https://c.tenor.com/dNtJSujn-lYAAAAj/run-pikachu.gif")
-            left top
-            no-repeat
-          `,
-          });
+          });/*https://i.pinimg.com/originals/31/65/06/31650631b14710d75ab00a32fc5dca15.gif*/
         });
     }
   }
