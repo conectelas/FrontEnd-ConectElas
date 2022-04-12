@@ -116,6 +116,14 @@
             <option value="ADM">Administrador</option>
           </select>
         </div>
+        <div *ngIf="tipoUsuario === 'ADM'" class="form-group">
+          <label for="tipo">Token do Administrador</label>
+          <input
+            [(ngModel)]="tokenAdm"
+            type="text"
+            placeholder="Digite o token"
+          />
+        </div>
 
         <div class="d-flex justify-content-center mb-3">
           <button

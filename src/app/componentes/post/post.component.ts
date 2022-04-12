@@ -16,6 +16,7 @@ export class PostComponent implements OnInit {
   @Input() content: PostagemModel;
   @Input() loader: string;
   @Input() tipoDeFeed: string;
+  showImageModal: boolean = false;
   mostrarBotoes: boolean = false;
   showPost: boolean = true;
   tipoUsuario = environment.tipo;
