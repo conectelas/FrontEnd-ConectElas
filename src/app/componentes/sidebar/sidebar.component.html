@@ -1,20 +1,6 @@
 <aside class="sidebarzinha">
   <div class="container">
-    <img
-      *ngIf="foto !== ''"
-      class="fotoUsuario"
-      src="{{ foto }}"
-      width="100"
-      height="100"
-      alt=""
-    />
-    <img
-      width="100"
-      height="100"
-      *ngIf="foto === ''"
-      src="assets/img/avatar-padrao.svg"
-      alt=""
-    />
+    <img class="fotoUsuario" src="{{ foto }}" width="100" height="100" alt="" />
     <!-- img perfil usuario -->
     <p class="nomeUsuario">{{ nome }}</p>
 
@@ -28,15 +14,15 @@
   <nav>
     <ul #links class="links">
       <li class="link-ctn">
-        <div *ngIf="linkClicado === 'Nova Postagem'" class="ativo"></div>
-        <button [swal]="novaPostagem" class="link">
-          <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
+        <div *ngIf="linkClicado === 'Nova Postagem'" class="ativo negrito"></div>
+        <button [swal]="novaPostagem" class="link p-0 negrito text-black" >
+          <img width="25" height="25" src="https://i.imgur.com/iR8aGlp.png" alt="" />
           Nova Postagem
         </button>
       </li>
       <li class="link-ctn">
-        <button class="link" (click)="mudar('/feed/usuario')">
-          <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
+        <button class="link p-0 negrito" (click)="mudar('/feed/usuario')">
+          <img width="25" height="25" src="https://i.imgur.com/hfNmsEe.png" alt="" />
           Minhas postagens
         </button>
       </li>
@@ -48,15 +34,15 @@
         >
       </li> -->
       <li class="link-ctn">
-        <div *ngIf="linkClicado === 'Editar Perfil'" class="ativo"></div>
-        <a [routerLink]="['/user-edit', id]" class="link">
-          <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
+        <div *ngIf="linkClicado === 'Editar Perfil'" class="ativo p-0"></div>
+        <a [routerLink]="['/user-edit', id]" class="link negrito text-black">
+          <img width="25" height="25" src="https://i.imgur.com/PpECUIG.png" alt="" />
           Editar Perfil</a
         >
       </li>
-      <li class="link-ctn" id="sair">
-        <button (click)="sair()" class="link">
-          <img width="25" height="25" src="assets/icons/homeIcon.svg" alt="" />
+      <li class="link-ctn p-0" id="sair">
+        <button (click)="sair()" class="link negrito" >
+          <img width="25" height="25" src="https://i.imgur.com/nuAarub.png" alt="" />
           Sair
         </button>
       </li>

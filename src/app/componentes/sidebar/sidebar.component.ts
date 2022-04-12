@@ -37,6 +37,9 @@ export class SidebarComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    if (this.foto === null) {
+      this.foto = 'assets/img/avatar-padrao.svg';
+    }
     // if (this.activatedRoute.snapshot.queryParams['update']) {
     // }
   }

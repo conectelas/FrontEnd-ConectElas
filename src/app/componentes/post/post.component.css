@@ -36,6 +36,7 @@ section {
   font-size: 2rem;
   border-bottom: 1px solid rgba(0, 0, 0);
   text-align: center;
+  color: #c89ce4;
 }
 
 .texto-post {
@@ -43,5 +44,16 @@ section {
 
 .foto-post {
   width: 100%;
+  max-width: 300px;
   object-fit: contain;
+  cursor: pointer;
+}
+
+.image-grow-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.big-image {
+  width: 100%;
 }

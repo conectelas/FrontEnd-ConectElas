@@ -34,12 +34,14 @@
   </div>
   <div class="post-info">
     <p class="titulo-post">{{ content.titulo }}</p>
-    <img
-      *ngIf="content.foto !== '' && content.foto !== null"
-      class="foto-post"
-      src="{{ content.foto }}"
-      alt=""
-    />
+    <button class="image-grow-btn" [swal]="imageGrow">
+      <img
+        *ngIf="content.foto !== '' && content.foto !== null"
+        class="foto-post"
+        src="{{ content.foto }}"
+        alt=""
+      />
+    </button>
     <p class="texto-post">
       {{ content.texto }}
     </p>
@@ -93,4 +95,14 @@
   [swalOptions]="swalOptionsDelete"
 >
   <h3>Deseja mesmo apagar a postagem {{ this.content.titulo }}?</h3>
+</swal>
+
+<swal
+  #imageGrow
+  title="{{ this.content.titulo }}"
+  [swalOptions]="{ imageHeight: 500 }"
+>
+  <div *swalPortal="undefined">
+    <img class="big-image" src="{{ this.content.foto }}" alt="" />
+  </div>
 </swal>

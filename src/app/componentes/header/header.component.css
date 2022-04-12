@@ -5,7 +5,7 @@ nav {
   padding: 1rem 5rem;
   align-items: center;
   position: fixed;
-  background-color: white;
+  background-color: #692ca3;
   width: 100vw;
 }
 
@@ -16,19 +16,13 @@ nav {
 
 ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
 li {
   list-style: none;
-  padding: 0.5rem 1rem;
-  background-color: #470557;
-  border-radius: 5px;
-  transition: 500ms all;
-}
-
-li:hover {
-  background-color: #c89ce4;
 }
 
 button {
@@ -38,6 +32,15 @@ button {
   letter-spacing: 1px;
   background-color: transparent;
   border: none;
+  padding: 0.5rem 1rem;
+  background-color: #791f90;
+  border-radius: 5px;
+  transition: 500ms all;
+}
+
+button:hover {
+  background-color: #c89ce4;
+  color: #212121;
 }
 
 input {
