@@ -15,6 +15,7 @@ import { EmpregabilidadeComponent } from './pages/empregabilidade/empregabilidad
 import { FeedUsuarioComponent } from './pages/feed-usuario/feed-usuario.component';
 import { MarketplaceComponent } from './pages/marketplace/marketplace.component';
 import { UserEditComponent } from './pages/edit/user-edit/user-edit.component';
+import { FaqComponent } from './pages/faq/faq.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home-desktop', pathMatch: 'full' },
@@ -38,6 +39,7 @@ export const routes: Routes = [
   { path: 'tema-edit/:id', component: TemaEditComponent },
   { path: 'postagem-edit/:id', component: PostEditComponent },
   { path: 'user-edit/:id', component: UserEditComponent },
+  { path: 'faq', component: FaqComponent}
 ];
 
 @NgModule({

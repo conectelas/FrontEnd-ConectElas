@@ -1,0 +1,23 @@
+<header>
+    <nav>
+      <p class="titulo">ConectElas</p>
+      <ul>
+        <li><button href="#">Home</button></li>
+        <li><button routerLink="/feed-marketplace">Marketplace</button></li>
+        <li><button routerLink="/feed">Empregabilidade</button></li>
+      </ul>
+      <input type="text" placeholder="Procurar postagem"/>
+    </nav>
+  </header>
+  
+  <main class="feed-page">
+    <app-sidebar></app-sidebar>
+  
+    <article class="feed">
+      <app-post *ngFor="let post of posts" [content]="post"></app-post>
+      <div class="sem-conteudo-ctn">
+        <img width="300" src="assets/img/sem_conteudo.svg" alt="" />
+        <p class="sem-conteudo--texto">Não há mais posts para mostrar!</p>
+      </div>
+    </article>
+  </main>
