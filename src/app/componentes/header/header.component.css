@@ -5,7 +5,7 @@ nav {
   padding: 1rem 5rem;
   align-items: center;
   position: fixed;
-  background-color: white;
+  background-color: #934379;
   width: 100vw;
 }
 
@@ -22,7 +22,7 @@ ul {
 li {
   list-style: none;
   padding: 0.5rem 1rem;
-  background-color: #470557;
+  background-color: #791f90;
   border-radius: 5px;
   transition: 500ms all;
 }

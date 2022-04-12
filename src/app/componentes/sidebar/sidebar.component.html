@@ -1,7 +1,7 @@
 <aside class="sidebarzinha">
   <div class="container">
     <img
-      *ngIf="foto !== ''"
+      *ngIf="foto !== '' || foto !== null"
       class="fotoUsuario"
       src="{{ foto }}"
       width="100"
