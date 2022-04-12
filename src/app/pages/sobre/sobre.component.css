@@ -3,9 +3,8 @@
 /* glasmorfism*/
 .textin {
   box-sizing: border-box;
-  box-shadow: 58px 20px 100px #c679ea;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 60px;
+  box-shadow: 58px 20px 100px  rgb(234, 0, 255);
+  border-radius: 40px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(50px);
 }
@@ -14,28 +13,30 @@
   margin-top: 2px;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  color: #d8d8d8;
+  color: #ffffff;
   font-weight: bold;
 }
 
 .circle {
   background-color: rgb(160, 33, 228);
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   position: relative;
   margin: 10px;
 }
 
-.elipse {
-  background-color: rgb(160, 33, 228);
-  border-radius: 50%;
-  width: 300px;
-  height: 200px;
+.conectImg {
+  max-width: 200px;
+  max-height: 200px;
   overflow: hidden;
-  position: relative;
-  margin: 10px;
+  position: center;
+}
+
+.conectCat{
+  width: 200px;
+  height: 200px;
 }
 
 .titulo {
@@ -49,7 +50,6 @@
 
 .ms-lr {
   margin-left: 240px;
-  margin-right: 240px;
 }
 
 .ms-r {
@@ -59,24 +59,20 @@
 /*card-perfis*/
 .container-fluid,
 .container {
-  max-width: 1200px;
+  max-width: 1800px;
 }
 
 .profile-card-2 {
-  max-width: 200px;
-  max-height: 300px;
-  background-color: #fff;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-  background-position: center;
+  max-width: 300px;
+  max-height: 450px;
   overflow: hidden;
   position: relative;
-  margin: 10px auto;
   cursor: pointer;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+ 
+  
 }
 
 .profile-card-2 img {
@@ -138,4 +134,163 @@ img-bg {
 
 .espaco {
   padding-top: 10rem;
+}
+
+/* footer */
+.borda {
+  text-shadow: 2px 0 0 #141212, -2px 0 0 #29156b, 0 2px 0 #141212, 0 -2px 0 #141212, 1px 1px #141212, -1px -1px 0 #141212, 1px -1px 0 #141212, -1px 1px 0 #141212;
+}
+.container-footer{
+  max-width: 100%;
+  margin: auto;
+}
+
+ul{
+  list-style: none;
+}
+/*------ Footer --------*/
+footer{
+  padding: 90px;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+
+.footer-col h4::before{
+  content: '';
+  position:absolute;
+  left: 0;
+  bottom: 210px;
+  background-color: rgb(23, 161, 211);
+  padding-right: 100px;
+  height: 2px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  width: 150px;
+}
+
+.footer-col ul{
+  padding-left: 0px;
+}
+
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin-right: 0px 5px 0px 5px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color:#ffffff;
+  transition: all 0.5 ease;
+}
+
+.footer-col .social-links a:hover{
+  color: #470557;
+  background-color: #ffffff;
+  cursor: pointer;
+
+
+}
+/* fim footer */
+
+.bg-cor{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background: linear-gradient(25deg, #8536a7, #a264c2, #B958A5, #230d38 );
+  background-size: 200% 300%;
+  animation: color 5s ease-in infinite;
+}
+
+/* bg footer */
+@keyframes color{
+  0%{
+background-position: 0% 50%;
+  }
+
+  50% {
+background-position: 100% 50%;
+  }
+  100% {
+background-position: 50% 50%;
+  }
+  100% {
+    background-position: 50% 100%;
+      }
+}
+/* bg footer */
+
+
+/* borda imagem */
+.espaco {
+  padding: 100px;
+}
+
+.image-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-top: 2px dashed #ff00a2;
+  border-right: 2px dashed #962a7b;
+  border-left: 2px dashed #332459;
+  border-bottom: 2px dashed #332459;
+  padding: 10px;
+  margin-top: 62px;
+  margin-left: 100px;
+  animation: spin 10s infinite linear;
+}
+.image-circle img {
+  animation: spin 10s infinite reverse linear;
+  width: 100%;
+  border-radius: 50%;
+  
+}
+
+
+
+@keyframes spin {
+  100% {
+      transform: rotate(1turn);
+  }
+}
+/* borda imagem */
+
+
+.borda{
+  margin-top: 60px;
+  margin-left: 100px
 }
