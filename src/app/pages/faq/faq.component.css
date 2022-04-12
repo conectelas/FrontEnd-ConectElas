@@ -1,0 +1,113 @@
+@import url("https://fonts.google.com/specimen/Poppins?query=poppins");
+
+main {
+  overflow-y: auto;
+  height: 100vh;
+  background-image: url("http://i.ibb.co/gwydKhD/6033687.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.corpo {
+  padding-top: 3rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 30%;
+  height: 243px;
+
+  box-shadow: 0px 0px 15px 5px rgba(200, 118, 205, 0.411);
+  background: rgba(228, 148, 229, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.glas{
+  background: rgba( 255, 255, 255, 0.4 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 9.5px );
+-webkit-backdrop-filter: blur( 9.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.ft-st{
+font-family: "Poppins", "sans-serif", monospace !important;
+font-size: 30pt;
+color: #a054b1;
+font-weight: bold;
+}
+.textin {
+  font-family: "Poppins", "sans-serif", monospace !important;
+  font-size: 20pt;
+  box-sizing: border-box;
+  border-radius: 35px;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 350px;
+  margin-left: 45px;
+
+  background: rgba(200, 118, 205, 0.411);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.mr-4{
+  margin-right: 12.5rem!important;
+}
+
+.box{
+  margin-top: 7.5rem!important;
+}
+
+.font1{
+  font-family: "Poppins", "sans-serif", monospace !important;
+  font-size: 20pt;
+  box-sizing: border-box;
+  border-radius: 35px;
+  color: #c58ed1;
+}
+.font2{
+  font-family: "Poppins", "sans-serif", monospace !important;
+  font-size: 16pt;
+  box-sizing: border-box;
+  border-radius: 35px;
+  color: #d2bad8;
+}
+
+.btn1{
+  margin-left: 50px;
+}
+
+.btn {
+  flex: 1 1 auto;
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+  margin-left: 10rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+  background-size: 200% auto;
+  color: rgb(193, 197, 230);
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px rgba(117, 56, 185, 0.466);
+  border-radius: 20px;
+ }
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-2 {
+  background-image: linear-gradient(to right, #cd89de 0%, #b664ed 51%, #d893e9 100%);
+}
