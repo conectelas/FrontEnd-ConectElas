@@ -97,7 +97,11 @@
   <h3>Deseja mesmo apagar a postagem {{ this.content.titulo }}?</h3>
 </swal>
 
-<swal #imageGrow title="{{ this.content.titulo }}">
+<swal
+  #imageGrow
+  title="{{ this.content.titulo }}"
+  [swalOptions]="{ imageHeight: 500 }"
+>
   <div *swalPortal="undefined">
     <img class="big-image" src="{{ this.content.foto }}" alt="" />
   </div>
