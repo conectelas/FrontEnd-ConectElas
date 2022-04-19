@@ -36,6 +36,8 @@ export class PostagemService {
     );
   }
 
+
+
   postPostagem(postagem: PostagemModel): Observable<PostagemModel> {
     return this.http.post<PostagemModel>(
       'https://conectelas.herokuapp.com/postagens',
